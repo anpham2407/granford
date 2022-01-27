@@ -5941,3 +5941,66 @@ footer {
 .is-IE .post-thumbnail .wp-post-image {
 	min-width: auto;
 }
+
+.header-banner {
+	position: relative;
+	margin-top: 0;
+	margin-bottom: 0;
+}
+
+.header-banner .what-news {
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	padding: 10px 70px;
+	background-color: #fff;
+	color: #ff6900;
+	display: flex;
+	align-items: center;
+}
+
+.header-banner .what-news .svg-icon {
+	margin: 0 5px;
+	padding: 3px;
+}
+
+.news-block {
+	display: flex;
+	margin-top: 0;
+}
+
+.news-block,
+.maxwidth {
+	padding: 0 70px;
+}
+
+.news-block .left-text {
+	flex: 0 0 600px;
+}
+
+.news-block .right-news-slider {
+	flex-grow: 1;
+}
+
+.primary-color {
+	color: #1e22aa;
+}
+
+.primary-headline {
+	font-size: 40px;
+}
+
+.image-bottom-content .content {
+	font-size: 14px;
+	color: #53565a;
+	margin-top: 10px;
+}
+
+.text-center {
+	text-align: center;
+}
+
+.image-bottom-content .bottom {
+	padding-top: 30px;
+	padding-bottom: 30px;
+}
