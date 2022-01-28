@@ -20,4 +20,6 @@ jQuery(document).ready(function($) {
 	var actWidth = $("#tile-1 .nav-tabs").find(".active").parent("li").width();
 	var actPosition = $("#tile-1 .nav-tabs .active").position();
 	$("#tile-1 .slider").css({"left":+ actPosition.left,"width": actWidth});
+
+	AOS.init();
 });

@@ -30,10 +30,11 @@ get_header(); ?>
 		style="width:100%"
 	>
 	<div class="center-content">
-		<h4 class="head">Extend Your Reach.</h4>
-		<div class="desc">As a trusted US partner, Granford can optimize your supply chain with established resources across the MITI-V region and China.</div>
+		<h4 class="head" data-aos="fade-down" data-aos-anchor=".site">Extend Your Reach.</h4>
+		<div class="desc" data-aos="fade-right" data-aos-anchor=".site">As a trusted US partner, Granford can optimize your supply chain with established resources across the MITI-V region and China.</div>
+		<!-- <div data-aos="fade-zoom-in" data-aos-offset="200" data-aos-easing="ease-in-sine" data-aos-duration="600"> -->
 	</div>
-	<div class="what-news">
+	<div class="what-news" data-aos="fade-up">
 		What's new at Granford
 		<?php echo twenty_twenty_one_get_icon_svg( 'ui', 'arrow_down' ); ?>
 	</div>
@@ -54,7 +55,17 @@ get_header(); ?>
 		style="width:100%"
 	>
 	<div class="bottom maxwidth text-center">
-		<h4 class="primary-color primary-headline">
+		<h4
+			class="primary-color primary-headline"
+			data-aos="fade-up"
+			data-aos-offset="200"
+			data-aos-delay="50"
+			data-aos-duration="1000"
+			data-aos-easing="ease-in-out"
+			data-aos-mirror="true"
+			data-aos-once="false"
+			data-aos-anchor-placement="top-center"
+		>
 			Factory to Door and More
 		</h4>
 		<div class="content">
@@ -87,13 +98,13 @@ get_header(); ?>
 			<div class="tab-pane fade show active" id="sourcing" role="tabpanel" aria-labelledby="sourcing-tab">
 				<div class="ct f-align-center">
 					<div class="l-ct">
-						<div class="head">
+						<div class="head" data-aos="fade-down" data-aos-anchor=".nav-tabs" data-aos-anchor-placement="top-center">
 							Speed and Smarts
 						</div>
-						<div class="des">
+						<div class="des" data-aos="fade-down" data-aos-delay="150" data-aos-anchor=".nav-tabs" data-aos-anchor-placement="top-center">
 							Count on us for efficient factory-to-door services, supported by our US distribution centers.
 						</div>
-						<a class="primary-outline-btn" href="javascript:;">Learn more</a>
+						<a class="primary-outline-btn" href="javascript:;" data-aos="fade-down" data-aos-delay="300" data-aos-anchor=".nav-tabs" data-aos-anchor-placement="top-center">Learn more</a>
 					</div>
 					<div class="r-ct bag-bg">
 						<img

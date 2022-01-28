@@ -475,11 +475,11 @@ function twenty_twenty_one_scripts() {
 		true
 	);
 
-	// bootstrap library scripts.
+	// aos library scripts.
 	if ( has_nav_menu( 'primary' ) ) {
 		wp_enqueue_script(
-			'twenty-twenty-one-bootstrap-script',
-			get_template_directory_uri() . '/assets/js/library/bootstrap.min.js',
+			'twenty-twenty-one-aos-script',
+			get_template_directory_uri() . '/assets/js/library/aos.js',
 			array( 'twenty-twenty-one-ie11-polyfills' ),
 			wp_get_theme()->get( 'Version' ),
 			true
