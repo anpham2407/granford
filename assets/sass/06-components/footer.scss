@@ -1,8 +1,22 @@
 // Footer
-.site-footer {
+.footer-wrapper{
+	background-color: #1E22AA;
+}
+.powered-by{
 	padding-top: 0;
 	padding-bottom: calc(1.7 * var(--global--spacing-vertical));
 	@extend %responsive-alignwide-width;
+	display: flex;
+}
+.site-footer {
+	padding-top: 20px;
+	padding-bottom: 50px;
+	@extend %responsive-alignwide-width;
+	display: flex;
+	.footer-left-side,
+	.footer-right-side{
+		flex: 0 0 50%;
+	}
 
 	// Increase the top vertical spacing when there is no widget area.
 	.no-widgets & {
@@ -15,16 +29,54 @@
 			margin-top: calc(3 * var(--global--spacing-vertical));
 		}
 	}
+	.custom-logo{
+		filter: brightness(0) invert(1);
+	}
+	.address{
+		margin-top: 10px;
+		.name{
+			font-size: 12px;
+			font-weight: 700;
+		}
+		.addr{
+			font-size: 12px;
+		}
+	}
+	.footer-right-side{
+		padding-top: 35px;
+		.widget_nav_menu{
+			.widgettitle{
+				font-size: 14px;
+				text-transform: uppercase;
+				font-weight: 700;
+			}
+			nav{
+				ul{
+					list-style-type: none;
+					padding-left: 0;
+					margin-top: 15px;
+					li{
+						a{
+							color: #fff;
+							text-transform: uppercase;
+							font-size: 14px;
+							text-decoration: none;
+						}
+					}
+				}
+			}
+		}
+	}
 }
 
 // Footer Branding
 .site-footer > .site-info {
 	padding-top: var(--global--spacing-vertical);
-	color: var(--footer--color-text);
+	color: var(--global--color-white);
 	font-family: var(--footer--font-family);
 	font-size: var(--footer--font-size);
 	line-height: var(--global--line-height-body);
-	border-top: 3px solid var(--global--color-border);
+	width: 100%;
 
 	.site-name {
 		text-transform: var(--branding--title--text-transform);
@@ -37,7 +89,6 @@
 
 	@include media(desktop) {
 		display: flex;
-		align-items: center;
 
 		.powered-by {
 			margin-top: initial;

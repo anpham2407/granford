@@ -776,6 +776,7 @@ template {
 .comments-pagination,
 .post-navigation,
 .site-footer,
+.powered-by,
 .site-header,
 .alignwide,
 .wide-max-width {
@@ -3925,9 +3926,25 @@ table.wp-calendar-table caption {
 	}
 }
 
-.site-footer {
+.footer-wrapper {
+	background-color: #1e22aa;
+}
+
+.powered-by {
 	padding-top: 0;
 	padding-bottom: calc(1.7 * var(--global--spacing-vertical));
+	display: flex;
+}
+
+.site-footer {
+	padding-top: 20px;
+	padding-bottom: 50px;
+	display: flex;
+}
+
+.site-footer .footer-left-side,
+.site-footer .footer-right-side {
+	flex: 0 0 50%;
 }
 
 .no-widgets .site-footer {
@@ -3940,13 +3957,53 @@ table.wp-calendar-table caption {
 	}
 }
 
+.site-footer .custom-logo {
+	filter: brightness(0) invert(1);
+}
+
+.site-footer .address {
+	margin-top: 10px;
+}
+
+.site-footer .address .name {
+	font-size: 12px;
+	font-weight: 700;
+}
+
+.site-footer .address .addr {
+	font-size: 12px;
+}
+
+.site-footer .footer-right-side {
+	padding-top: 35px;
+}
+
+.site-footer .footer-right-side .widget_nav_menu .widgettitle {
+	font-size: 14px;
+	text-transform: uppercase;
+	font-weight: 700;
+}
+
+.site-footer .footer-right-side .widget_nav_menu nav ul {
+	list-style-type: none;
+	padding-right: 0;
+	margin-top: 15px;
+}
+
+.site-footer .footer-right-side .widget_nav_menu nav ul li a {
+	color: #fff;
+	text-transform: uppercase;
+	font-size: 14px;
+	text-decoration: none;
+}
+
 .site-footer > .site-info {
 	padding-top: var(--global--spacing-vertical);
-	color: var(--footer--color-text);
+	color: var(--global--color-white);
 	font-family: var(--footer--font-family);
 	font-size: var(--footer--font-size);
 	line-height: var(--global--line-height-body);
-	border-top: 3px solid var(--global--color-border);
+	width: 100%;
 }
 
 .site-footer > .site-info .site-name {
@@ -3961,7 +4018,6 @@ table.wp-calendar-table caption {
 
 	.site-footer > .site-info {
 		display: flex;
-		align-items: center;
 	}
 
 	.site-footer > .site-info .powered-by {
@@ -5949,6 +6005,7 @@ footer {
 
 a:hover {
 	opacity: 0.7;
+	text-decoration: underline;
 }
 
 .header-banner {
