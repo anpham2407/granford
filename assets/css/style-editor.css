@@ -8,8 +8,9 @@
 :root {
 
 	/* Font Family */
-	--global--font-primary: var(--font-headings, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif);
-	--global--font-secondary: var(--font-base, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif);
+	--global--font-primary: var(--font-headings, Roboto, -apple-system, BlinkMacSystemFont, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif);
+	--global--font-secondary: var(--font-base, Roboto, -apple-system, BlinkMacSystemFont, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif);
+	--global--font-3rd: var(--font-base, Roboto Slab, -apple-system, BlinkMacSystemFont, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif);
 
 	/* Font Size */
 	--global--font-size-base: 1.25rem;
@@ -89,10 +90,10 @@
 	/* Used for borders (separators) */
 
 	/* Spacing */
-	--global--spacing-unit: 20px;
+	--global--spacing-unit: 10px;
 	--global--spacing-measure: unset;
-	--global--spacing-horizontal: 25px;
-	--global--spacing-vertical: 30px;
+	--global--spacing-horizontal: 5px;
+	--global--spacing-vertical: 10px;
 
 	/* Elevation */
 	--global--elevation: 1px 1px 3px 0 rgba(0, 0, 0, 0.2);
@@ -496,11 +497,6 @@ a:hover {
 }
 
 .is-dark-theme .site a:focus:not(.wp-block-button__link):not(.wp-block-file__button) .meta-nav {
-	color: var(--wp--style--color--link, var(--global--color-white));
-}
-
-.has-background-white .site a:focus:not(.wp-block-button__link):not(.wp-block-file__button) {
-	background: rgba(0, 0, 0, 0.9);
 	color: var(--wp--style--color--link, var(--global--color-white));
 }
 

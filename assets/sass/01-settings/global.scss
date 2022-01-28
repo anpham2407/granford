@@ -6,8 +6,9 @@ $baseline-unit: 10px;
 :root {
 
 	/* Font Family */
-	--global--font-primary: var(--font-headings, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif);
-	--global--font-secondary: var(--font-base, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif);
+	--global--font-primary: var(--font-headings, Roboto, -apple-system, BlinkMacSystemFont, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif);
+	--global--font-secondary: var(--font-base, Roboto, -apple-system, BlinkMacSystemFont, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif);
+	--global--font-3rd: var(--font-base, Roboto Slab, -apple-system, BlinkMacSystemFont, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif);
 
 	/* Font Size */
 	--global--font-size-base: 1.25rem; // 20px / 16px
@@ -85,10 +86,10 @@ $baseline-unit: 10px;
 	--global--color-border: var(--global--color-primary); /* Used for borders (separators) */
 
 	/* Spacing */
-	--global--spacing-unit: #{2 * $baseline-unit}; // 20px
+	--global--spacing-unit: #{1 * $baseline-unit}; // 20px
 	--global--spacing-measure: unset; // Use ch units here. ie: 60ch = 60 character max-width
-	--global--spacing-horizontal: #{2.5 * $baseline-unit}; // 25px
-	--global--spacing-vertical: #{3 * $baseline-unit}; // 30px.
+	--global--spacing-horizontal: #{0.5 * $baseline-unit}; // 25px
+	--global--spacing-vertical: #{1 * $baseline-unit}; // 30px.
 
 	/* Elevation */
 	--global--elevation: 1px 1px 3px 0 rgba(0, 0, 0, 0.2);
