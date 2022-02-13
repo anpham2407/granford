@@ -21,11 +21,10 @@ get_header(); ?>
 	</header><!-- .page-header -->
 <?php endif; ?>
 
-
 <div class="header-banner">
 	<img 
-		src="http://localhost/granford/wp-content/uploads/2022/01/banner-top.png"
-		class="attachment-full size-full"
+		src="https://Granford.000webhostapp.com/wp-content/uploads/2022/01/banner-top.png"
+		class="attachment-full size-full hero-banner-img"
 		alt=""
 		style="width:100%"
 	>
@@ -44,12 +43,14 @@ get_header(); ?>
 	Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
 	</div>
 	<div class="right-news-slider">
-		slider should be comfirm
+		<div>
+			<?php echo do_shortcode( '[recent_posts num="10" cat="" order="asc"]' ); ?>
+		</div>
 	</div>
 </div>
 <div class="image-bottom-content">
 	<img 
-		src="http://localhost/granford/wp-content/uploads/2022/01/banner-section.png"
+		src="https://Granford.000webhostapp.com/wp-content/uploads/2022/01/banner-section.png"
 		class="attachment-full size-full"
 		alt=""
 		style="width:100%"
@@ -57,14 +58,6 @@ get_header(); ?>
 	<div class="bottom maxwidth text-center">
 		<h4
 			class="primary-color primary-headline"
-			data-aos="fade-up"
-			data-aos-offset="200"
-			data-aos-delay="50"
-			data-aos-duration="1000"
-			data-aos-easing="ease-in-out"
-			data-aos-mirror="true"
-			data-aos-once="false"
-			data-aos-anchor-placement="top-center"
 		>
 			Factory to Door and More
 		</h4>
@@ -76,48 +69,103 @@ get_header(); ?>
 
 <div class="maxwidth tabs-content">
 	<div class="tile" id="tile-1">
-		<!-- Nav tabs -->
-		<ul class="nav nav-tabs nav-justified" role="tablist">
-			<div class="slider"></div>
-			<li class="nav-item">
-				<a class="nav-link active" id="sourcing-tab" data-toggle="tab" href="#sourcing" role="tab" aria-controls="sourcing" aria-selected="true"><?php echo twenty_twenty_one_get_icon_svg( 'ui', 'magnifier' ); ?><span class="value">SOURCING</span></a>
-			</li>
-			<li class="nav-item">
-				<a class="nav-link" id="distribution-tab" data-toggle="tab" href="#distribution" role="tab" aria-controls="distribution" aria-selected="false"><?php echo twenty_twenty_one_get_icon_svg( 'ui', 'delivery' ); ?><span class="value">DISTRIBUTION</span></a>
-			</li>
-			<li class="nav-item">
-				<a class="nav-link" id="manufacturing-tab" data-toggle="tab" href="#manufacturing" role="tab" aria-controls="contact" aria-selected="false"><?php echo twenty_twenty_one_get_icon_svg( 'ui', 'building' ); ?><span class="value">CONTRACT</br>MANUFACTURING</span></a>
-			</li>
-			<li class="nav-item">
-				<a class="nav-link" id="labeling-tab" data-toggle="tab" href="#labeling"role="tab" aria-controls="labeling" aria-selected="false"><?php echo twenty_twenty_one_get_icon_svg( 'ui', 'tag' ); ?><span class="value">PRIVATE</br>LABELING</span></a>
-			</li>
-		</ul>
-
-		<!-- Tab panes -->
-		<div class="tab-content">
-			<div class="tab-pane fade show active" id="sourcing" role="tabpanel" aria-labelledby="sourcing-tab">
-				<div class="ct f-align-center">
-					<div class="l-ct">
-						<div class="head" data-aos="fade-down" data-aos-anchor=".nav-tabs" data-aos-anchor-placement="top-center">
-							Speed and Smarts
+		<div class="content-slider">
+			<div data-slidernav="2016" title="SOURCING" icon="icon-magnifier">
+				<div class="inner">
+					<div class="tab-pane fade show active" id="sourcing" role="tabpanel" aria-labelledby="sourcing-tab">
+						<div class="ct f-align-center">
+							<div class="l-ct">
+								<div class="head" data-aos="fade-down" data-aos-anchor=".tabs-content" data-aos-anchor-placement="top-center">
+									The Ideal Source
+								</div>
+								<div class="des" data-aos="fade-down" data-aos-delay="150" data-aos-anchor=".tabs-content" data-aos-anchor-placement="top-center">
+								We offer diversified, cost-effective sourcing solutions, based on trusted local relationships throughout Southeast Asia.
+								</div>
+								<a class="primary-outline-btn" href="javascript:;" data-aos="fade-down" data-aos-delay="300" data-aos-anchor=".tabs-content" data-aos-anchor-placement="top-center">Learn more</a>
+							</div>
+							<div class="r-ct bag-bg">
+								<img
+									src="https://Granford.000webhostapp.com/wp-content/uploads/2022/01/hp-banner-tabs-01.png"
+									class="attachment-full size-full"
+									style="width:100%"
+								>
+							</div>
 						</div>
-						<div class="des" data-aos="fade-down" data-aos-delay="150" data-aos-anchor=".nav-tabs" data-aos-anchor-placement="top-center">
-							Count on us for efficient factory-to-door services, supported by our US distribution centers.
-						</div>
-						<a class="primary-outline-btn" href="javascript:;" data-aos="fade-down" data-aos-delay="300" data-aos-anchor=".nav-tabs" data-aos-anchor-placement="top-center">Learn more</a>
-					</div>
-					<div class="r-ct bag-bg">
-						<img
-							src="http://localhost/granford/wp-content/uploads/2022/01/hp-banner-tabs-01.png"
-							class="attachment-full size-full"
-							style="width:100%"
-						>
 					</div>
 				</div>
 			</div>
-			<div class="tab-pane fade" id="distribution" role="tabpanel" aria-labelledby="distribution-tab">distribution</div>
-			<div class="tab-pane fade" id="manufacturing" role="tabpanel" aria-labelledby="manufacturing-tab">manufacturing</div>
-			<div class="tab-pane fade" id="labeling" role="tabpanel" aria-labelledby="labeling-tab">labeling</div>
+			<div data-slidernav="2016" title="DISTRIBUTION" icon="icon-delivery">
+				<div class="inner">
+					<div class="tab-pane fade show active" id="sourcing" role="tabpanel" aria-labelledby="sourcing-tab">
+						<div class="ct f-align-center">
+							<div class="l-ct">
+								<div class="head" data-aos="fade-down" data-aos-anchor=".tabs-content" data-aos-anchor-placement="top-center">
+									Speed and Smarts
+								</div>
+								<div class="des" data-aos="fade-down" data-aos-delay="150" data-aos-anchor=".tabs-content" data-aos-anchor-placement="top-center">
+									Count on us for efficient factory-to-door services, supported by our US distribution centers.
+								</div>
+								<a class="primary-outline-btn" href="javascript:;" data-aos="fade-down" data-aos-delay="300" data-aos-anchor=".tabs-content" data-aos-anchor-placement="top-center">Learn more</a>
+							</div>
+							<div class="r-ct bag-bg">
+								<img
+									src="https://Granford.000webhostapp.com/wp-content/uploads/2022/01/hp-banner-tabs-01.png"
+									class="attachment-full size-full"
+									style="width:100%"
+								>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div data-slidernav="2014" title="CONTRACT MANUFACTURING" icon="icon-building">
+				<div class="inner">
+					<div class="tab-pane fade show active" id="sourcing" role="tabpanel" aria-labelledby="sourcing-tab">
+						<div class="ct f-align-center">
+							<div class="l-ct">
+								<div class="head" data-aos="fade-down" data-aos-anchor=".tabs-content" data-aos-anchor-placement="top-center">
+									Your Specs, Our Expertise
+								</div>
+								<div class="des" data-aos="fade-down" data-aos-delay="150" data-aos-anchor=".tabs-content" data-aos-anchor-placement="top-center">
+									Granford has a proven ability to cost-effectively manufacture products to exact specifications.
+								</div>
+								<a class="primary-outline-btn" href="javascript:;" data-aos="fade-down" data-aos-delay="300" data-aos-anchor=".tabs-content" data-aos-anchor-placement="top-center">Learn more</a>
+							</div>
+							<div class="r-ct bag-bg">
+								<img
+									src="https://Granford.000webhostapp.com/wp-content/uploads/2022/01/hp-banner-tabs-01.png"
+									class="attachment-full size-full"
+									style="width:100%"
+								>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div data-slidernav="2014" title="PRIVATE LABELING" icon="icon-tag">
+				<div class="inner">
+					<div class="tab-pane fade show active" id="sourcing" role="tabpanel" aria-labelledby="sourcing-tab">
+						<div class="ct f-align-center">
+							<div class="l-ct">
+								<div class="head" data-aos="fade-down" data-aos-anchor=".tabs-content" data-aos-anchor-placement="top-center">
+									Precision Solutions
+								</div>
+								<div class="des" data-aos="fade-down" data-aos-delay="150" data-aos-anchor=".tabs-content" data-aos-anchor-placement="top-center">
+									We deliver customized private labeling for products sourced in the MITI-V region and China.
+								</div>
+								<a class="primary-outline-btn" href="javascript:;" data-aos="fade-down" data-aos-delay="300" data-aos-anchor=".tabs-content" data-aos-anchor-placement="top-center">Learn more</a>
+							</div>
+							<div class="r-ct bag-bg">
+								<img
+									src="https://Granford.000webhostapp.com/wp-content/uploads/2022/01/hp-banner-tabs-01.png"
+									class="attachment-full size-full"
+									style="width:100%"
+								>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
 		</div>
 	</div>
 </div>
@@ -129,7 +177,7 @@ get_header(); ?>
 					<div class="head">Medical Distribution</div>
 					<div class="desc">One of our areas of expertise is Medical Distribution, where we apply our core competencies, expand our scope, and provide value to clients.</div>
 					<img
-						src="http://localhost/granford/wp-content/uploads/2022/01/hp-banner-z.png"
+						src="https://Granford.000webhostapp.com/wp-content/uploads/2022/01/hp-banner-z.png"
 						class="attachment-full size-full"
 						alt=""
 						style="width:100%"
@@ -163,7 +211,7 @@ get_header(); ?>
 
 <div class="image-bottom-content">
 	<img 
-		src="http://localhost/granford/wp-content/uploads/2022/01/home-banner-02-1.jpg"
+		src="https://Granford.000webhostapp.com/wp-content/uploads/2022/01/home-banner-02.jpg"
 		class="attachment-full size-full"
 		style="width:100%"
 	>

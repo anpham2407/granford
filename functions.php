@@ -398,6 +398,11 @@ function twenty_twenty_one_content_width() {
 }
 add_action( 'after_setup_theme', 'twenty_twenty_one_content_width', 0 );
 
+// function insert_jquery_in_header(){
+// 	wp_enqueue_script('jquery', false, array(), false, false);
+// 	}
+// 	add_filter('wp_enqueue_scripts','insert_jquery_in_header',1);
+
 /**
  * Enqueue scripts and styles.
  *
@@ -428,10 +433,12 @@ function twenty_twenty_one_scripts() {
 		wp_enqueue_script( 'comment-reply' );
 	}
 
-	// Register the IE11 polyfill file.
+	wp_enqueue_script('jquery', false, array(), false, false);
+
+	// Register the IE11 polyfill loader.
 	wp_register_script(
-		'twenty-twenty-one-ie11-polyfills-asset',
-		get_template_directory_uri() . '/assets/js/polyfills.js',
+		'twenty-twenty-one',
+		null,
 		array(),
 		wp_get_theme()->get( 'Version' ),
 		true
@@ -475,23 +482,27 @@ function twenty_twenty_one_scripts() {
 		true
 	);
 
-	// aos library scripts.
-	if ( has_nav_menu( 'primary' ) ) {
-		wp_enqueue_script(
-			'twenty-twenty-one-aos-script',
-			get_template_directory_uri() . '/assets/js/library/aos.js',
-			array( 'twenty-twenty-one-ie11-polyfills' ),
-			wp_get_theme()->get( 'Version' ),
-			true
-		);
-	}
-
 	// Custom theme scripts.
 	if ( has_nav_menu( 'primary' ) ) {
 		wp_enqueue_script(
 			'twenty-twenty-one-custom-script',
 			get_template_directory_uri() . '/assets/js/custom.js',
-			array( 'twenty-twenty-one-ie11-polyfills' ),
+			array( 'twenty-twenty-one' ),
+			wp_get_theme()->get( 'Version' ),
+			true
+		);
+	// aos library scripts.
+		wp_enqueue_script(
+			'twenty-twenty-one-aos-script',
+			get_template_directory_uri() . '/assets/js/library/aos.js',
+			array( 'twenty-twenty-one' ),
+			wp_get_theme()->get( 'Version' ),
+			true
+		);
+		wp_enqueue_script(
+			'twenty-twenty-one-slick-script',
+			get_template_directory_uri() . '/assets/js/library/slick.min.js',
+			array( 'twenty-twenty-one' ),
 			wp_get_theme()->get( 'Version' ),
 			true
 		);
@@ -671,3 +682,41 @@ function twentytwentyone_add_ie_class() {
 	<?php
 }
 add_action( 'wp_footer', 'twentytwentyone_add_ie_class' );
+
+// short code recent post
+// recent posts shortcode
+// @ https://digwp.com/2018/08/shortcode-display-recent-posts/
+function shapeSpace_recent_posts_shortcode($atts, $content = null) {
+	global $post;
+	extract(shortcode_atts(array(
+		'cat'     => '',
+		'num'     => '5',
+		'order'   => 'DESC',
+		'orderby' => 'post_date',
+	), $atts));
+	$args = array(
+		'cat'            => $cat,
+		'posts_per_page' => $num,
+		'order'          => $order,
+		'orderby'        => $orderby,
+	);
+	$output = '';
+	$posts = get_posts($args);
+	foreach($posts as $post) {
+		setup_postdata($post);
+		$thumbnail = '';
+		if(wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), "medium" )) {
+			$thumbnail = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), "medium" );
+			$thumbnail = '<div class="thumbnail"><img src="'.$thumbnail[0].'"/></div>';
+		}
+		$output .= '<li class="item">
+				'.$thumbnail.'
+				<div class="content"><div class="date">'.get_the_date( 'M. j, Y' ).'</div>
+				<a class="title" href="'. get_the_permalink() .'">'. get_the_title() .'</a>
+				<a class="readmore" href="'. get_the_permalink() .'">Read more</a></div>
+			</li>';
+	}
+	wp_reset_postdata();
+	return '<ul class="post-slider">'. $output .'</ul>';
+}
+add_shortcode('recent_posts', 'shapeSpace_recent_posts_shortcode');
