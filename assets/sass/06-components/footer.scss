@@ -67,6 +67,37 @@
 			}
 		}
 	}
+	@include media(mobile-only) {
+		.address,
+		.footer-right-side{
+			text-align: center;
+		}
+		.footer-left-side{
+			.site-logo{
+				margin-left: 20px;
+			}
+		}
+
+		.footer-right-side{
+			padding-top: 15px;
+			.wp-block-column{
+				margin-top: 30px;
+				margin-bottom: 0;
+				nav{
+					margin-top: 0;
+				}
+				.widgettitle{
+					margin-bottom: 0;
+				}
+				.menu{
+					margin-top: 0;
+				}
+				.menu-item{
+					line-height: 1;
+				}
+			}
+		}
+	}
 }
 
 // Footer Branding
@@ -87,7 +118,7 @@
 		margin-top: calc(0.5 * var(--global--spacing-vertical));
 	}
 
-	@include media(desktop) {
+	@include media(tablet) {
 		display: flex;
 
 		.powered-by {

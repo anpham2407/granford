@@ -24,6 +24,9 @@
 		background-color: transparent;
 		border: none;
 		color: var(--primary-nav--color-link);
+		@include media(mobile-only) {
+			padding: 5px;
+		}
 
 		.dropdown-icon {
 			display: flex;
@@ -34,12 +37,15 @@
 				width: 40px;
 				height: 40px;
 				color: #1e22aa;
+				@include media(mobile-only) {
+					width: 22px;
+					height: 22px;
+				}
 			}
 
 			// Menu icon is off-center vertically to prevent blurry pixels.
 			&.open .svg-icon {
 				position: relative;
-				top: -1px;
 			}
 
 			&.close {
@@ -75,20 +81,32 @@
 
 		#primary-mobile-menu {
 			position: static;
+
 		}
 	}
 }
 
 .primary-navigation {
 	position: absolute;
-	top: 3px;
-	right: 0;
 	color: var(--primary-nav--color-text);
 	font-size: var(--primary-nav--font-size);
 	line-height: 1.15;
 	margin-top: 0;
 	margin-bottom: 0;
-
+	@include media(mobile-only) {
+		left: 15px;
+		width: 28px;
+		height: 40px;
+		top: 23px;
+	}
+	@include media(tablet) {
+		top: 2px;
+		right: -10px;
+	}
+	@include media(desktop) {
+		top: 15px;
+		right: 0;
+	}
 	// Mobile menu closed
 	> .primary-menu-container {
 		position: fixed;
@@ -139,10 +157,12 @@
 		z-index: 2; // To be greater than the cover block and embeds.
 
 		> .primary-menu-container {
-			// position: absolute;
 			visibility: visible;
 			opacity: 1;
 			transform: translateY(0);
+		}
+		.menu-button-container{
+			right: 12px;
 		}
 	}
 

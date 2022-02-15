@@ -40,6 +40,15 @@ jQuery(document).ready(function($) {
 		customPaging: function(slider, i) {
 			return '<div><i class="' + $(slider.$slides[i]).attr('icon') + '"></i><span class="value">' + $(slider.$slides[i]).attr('title') + '</span></div>';
 		},
+		responsive: [
+			{
+			  breakpoint: 760,
+			  settings: "unslick"
+			}
+			// You can unslick at a given breakpoint now by adding:
+			// settings: "unslick"
+			// instead of a settings object
+		  ]
 	});
 	AOS.init();
 	// Run when slides change
@@ -63,6 +72,21 @@ jQuery(document).ready(function($) {
 		slidesToShow: 3,
 		slidesToScroll: 1,
 		variableWidth: true,
+		responsive: [
+			{
+			  breakpoint: 480,
+			  settings: {
+				slidesToShow: 1,
+				slidesToScroll: 1,
+				variableWidth: false,
+				dots: true,
+				arrows: false
+			  }
+			}
+			// You can unslick at a given breakpoint now by adding:
+			// settings: "unslick"
+			// instead of a settings object
+		  ]
 	});
 
 });

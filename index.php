@@ -27,10 +27,11 @@ get_header(); ?>
 		class="attachment-full size-full hero-banner-img"
 		alt=""
 		style="width:100%"
+		data-aos="fade-down" data-aos-anchor=".site"
 	>
 	<div class="center-content">
-		<h4 class="head" data-aos="fade-down" data-aos-anchor=".site">Extend Your Reach.</h4>
-		<div class="desc" data-aos="fade-right" data-aos-anchor=".site">As a trusted US partner, Granford can optimize your supply chain with established resources across the MITI-V region and China.</div>
+		<h4 class="head" data-aos="fade-up" data-aos-delay="150" data-aos-anchor=".site">Extend Your Reach.</h4>
+		<div class="desc" data-aos="fade-up" data-aos-delay="300" data-aos-anchor=".site">As a trusted US partner, Granford can optimize your supply chain with established resources across the MITI-V region and China.</div>
 		<!-- <div data-aos="fade-zoom-in" data-aos-offset="200" data-aos-easing="ease-in-sine" data-aos-duration="600"> -->
 	</div>
 	<div class="what-news" data-aos="fade-up">
@@ -38,6 +39,7 @@ get_header(); ?>
 		<?php echo twenty_twenty_one_get_icon_svg( 'ui', 'arrow_down' ); ?>
 	</div>
 </div>
+
 <div class="maxwidth news-block">
 	<div class="left-text">
 	Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
@@ -67,7 +69,80 @@ get_header(); ?>
 	</div>
 </div>
 
-<div class="maxwidth tabs-content">
+
+<div class="accordion d-block d-md-none" id="features">
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="headingOne">
+      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+	  		<i class="left-icon icon icon-magnifier"></i>
+			<span class="text">SOURCING</span>
+      </button>
+    </h2>
+    <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#features">
+      <div class="accordion-body">
+	  	<div class="ct f-align-center">
+			<div class="l-ct">
+				<div class="head" data-aos="fade-left" data-aos-anchor="#features" data-aos-anchor-placement="top-center">
+					The Ideal Source
+				</div>
+				<div class="des" data-aos="fade-left" data-aos-delay="200" data-aos-anchor="#features" data-aos-anchor-placement="top-center">
+				We offer diversified, cost-effective sourcing solutions, based on trusted local relationships throughout Southeast Asia.
+				</div>
+				<a class="primary-outline-btn" href="javascript:;" data-aos="fade-left" data-aos-delay="400" data-aos-anchor="#features" data-aos-anchor-placement="top-center">Learn more</a>
+			</div>
+		</div>
+      </div>
+    </div>
+  </div>
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="headingTwo">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+	  		<i class="left-icon icon icon-delivery"></i>
+			<span class="text">DISTRIBUTION</span>
+      </button>
+    </h2>
+    <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#features">
+      <div class="accordion-body">
+	  	<div class="ct f-align-center">
+			<div class="l-ct">
+				<div class="head" data-aos="fade-down" data-aos-anchor=".tabs-content" data-aos-anchor-placement="top-center">
+					Speed and Smarts
+				</div>
+				<div class="des" data-aos="fade-down" data-aos-delay="150" data-aos-anchor=".tabs-content" data-aos-anchor-placement="top-center">
+					Count on us for efficient factory-to-door services, supported by our US distribution centers.
+				</div>
+				<a class="primary-outline-btn" href="javascript:;" data-aos="fade-down" data-aos-delay="300" data-aos-anchor=".tabs-content" data-aos-anchor-placement="top-center">Learn more</a>
+			</div>
+		</div>
+      </div>
+    </div>
+  </div>
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="headingThree">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+	  		<i class="left-icon icon icon-building"></i>
+			<span class="text">CONTRACT MANUFACTURING</span>
+      </button>
+    </h2>
+    <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#features">
+      <div class="accordion-body">
+	  		<div class="ct f-align-center">
+				<div class="l-ct">
+					<div class="head" data-aos="fade-down" data-aos-anchor=".tabs-content" data-aos-anchor-placement="top-center">
+						Your Specs, Our Expertise
+					</div>
+					<div class="des" data-aos="fade-down" data-aos-delay="150" data-aos-anchor=".tabs-content" data-aos-anchor-placement="top-center">
+						Granford has a proven ability to cost-effectively manufacture products to exact specifications.
+					</div>
+					<a class="primary-outline-btn" href="javascript:;" data-aos="fade-down" data-aos-delay="300" data-aos-anchor=".tabs-content" data-aos-anchor-placement="top-center">Learn more</a>
+				</div>
+			</div>
+      	</div>
+    </div>
+  </div>
+</div>
+
+<div class="maxwidth tabs-content d-none d-md-block">
 	<div class="tile" id="tile-1">
 		<div class="content-slider">
 			<div data-slidernav="2016" title="SOURCING" icon="icon-magnifier">
@@ -75,13 +150,13 @@ get_header(); ?>
 					<div class="tab-pane fade show active" id="sourcing" role="tabpanel" aria-labelledby="sourcing-tab">
 						<div class="ct f-align-center">
 							<div class="l-ct">
-								<div class="head" data-aos="fade-down" data-aos-anchor=".tabs-content" data-aos-anchor-placement="top-center">
+								<div class="head" data-aos="fade-left" data-aos-anchor=".tabs-content" data-aos-anchor-placement="top-center">
 									The Ideal Source
 								</div>
-								<div class="des" data-aos="fade-down" data-aos-delay="150" data-aos-anchor=".tabs-content" data-aos-anchor-placement="top-center">
+								<div class="des" data-aos="fade-left" data-aos-delay="200" data-aos-anchor=".tabs-content" data-aos-anchor-placement="top-center">
 								We offer diversified, cost-effective sourcing solutions, based on trusted local relationships throughout Southeast Asia.
 								</div>
-								<a class="primary-outline-btn" href="javascript:;" data-aos="fade-down" data-aos-delay="300" data-aos-anchor=".tabs-content" data-aos-anchor-placement="top-center">Learn more</a>
+								<a class="primary-outline-btn" href="javascript:;" data-aos="fade-left" data-aos-delay="400" data-aos-anchor=".tabs-content" data-aos-anchor-placement="top-center">Learn more</a>
 							</div>
 							<div class="r-ct bag-bg">
 								<img
@@ -174,18 +249,24 @@ get_header(); ?>
 		<div class="block-z-style">
 			<div class="z-left">
 				<div class="z-content">
-					<div class="head">Medical Distribution</div>
+					<div class="head head-space-mb">Medical Distribution</div>
 					<div class="desc">One of our areas of expertise is Medical Distribution, where we apply our core competencies, expand our scope, and provide value to clients.</div>
 					<img
 						src="https://Granford.000webhostapp.com/wp-content/uploads/2022/01/hp-banner-z.png"
-						class="attachment-full size-full"
+						class="attachment-full size-full d-none d-md-block"
+						alt=""
+						style="width:100%"
+					>
+					<img
+						src="http://localhost/granford/wp-content/uploads/2022/01/marsk.jpg"
+						class="attachment-full size-full .-block d-md-none"
 						alt=""
 						style="width:100%"
 					>
 				</div>
 			</div>
 			<div class="z-right">
-				<div class="z-content">
+				<div class="z-content space-mg-mb">
 					<div class="head">Providing Certainty in Uncertain Times</div>
 					<div class="desc">Since early 2020, Granford has helped Fortune 1000 clients navigate the turbulent market conditions brought on by the coronavirus pandemic. Our services in alternative product development, compliance, warehousing and distribution, and other areas are helping clients to maintain operations and stay competitive.</div>
 					<a class="primary-outline-btn" href="#">Learn more</a>

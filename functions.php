@@ -410,23 +410,24 @@ add_action( 'after_setup_theme', 'twenty_twenty_one_content_width', 0 );
  *
  * @return void
  */
-function twenty_twenty_one_scripts() {
+function granford_scripts() {
 	// Note, the is_IE global variable is defined by WordPress and is used
 	// to detect if the current browser is internet explorer.
 	global $is_IE, $wp_scripts;
 	if ( $is_IE ) {
 		// If IE 11 or below, use a flattened stylesheet with static values replacing CSS Variables.
-		wp_enqueue_style( 'twenty-twenty-one-style', get_template_directory_uri() . '/assets/css/ie.css', array(), wp_get_theme()->get( 'Version' ) );
+		wp_enqueue_style( 'granford-style', get_template_directory_uri() . '/assets/css/ie.css', array(), wp_get_theme()->get( 'Version' ) );
 	} else {
 		// If not IE, use the standard stylesheet.
-		wp_enqueue_style( 'twenty-twenty-one-style', get_template_directory_uri() . '/style.css', array(), wp_get_theme()->get( 'Version' ) );
+		wp_enqueue_style( 'bootstrap-style', get_template_directory_uri() . '/assets/css/bootstrap.min.css', array(), wp_get_theme()->get( 'Version' ) );
+		wp_enqueue_style( 'granford-style', get_template_directory_uri() . '/style.css', array(), wp_get_theme()->get( 'Version' ) );
 	}
 
 	// RTL styles.
-	wp_style_add_data( 'twenty-twenty-one-style', 'rtl', 'replace' );
+	wp_style_add_data( 'granford-style', 'rtl', 'replace' );
 
 	// Print styles.
-	wp_enqueue_style( 'twenty-twenty-one-print-style', get_template_directory_uri() . '/assets/css/print.css', array(), wp_get_theme()->get( 'Version' ), 'print' );
+	wp_enqueue_style( 'granford-style', get_template_directory_uri() . '/assets/css/print.css', array(), wp_get_theme()->get( 'Version' ), 'print' );
 
 	// Threaded comment reply styles.
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
@@ -437,7 +438,7 @@ function twenty_twenty_one_scripts() {
 
 	// Register the IE11 polyfill loader.
 	wp_register_script(
-		'twenty-twenty-one',
+		'grandford',
 		null,
 		array(),
 		wp_get_theme()->get( 'Version' ),
@@ -446,18 +447,18 @@ function twenty_twenty_one_scripts() {
 
 	// Register the IE11 polyfill loader.
 	wp_register_script(
-		'twenty-twenty-one-ie11-polyfills',
+		'granford-ie11-style',
 		null,
 		array(),
 		wp_get_theme()->get( 'Version' ),
 		true
 	);
 	wp_add_inline_script(
-		'twenty-twenty-one-ie11-polyfills',
+		'granford-ie11-style',
 		wp_get_script_polyfill(
 			$wp_scripts,
 			array(
-				'Element.prototype.matches && Element.prototype.closest && window.NodeList && NodeList.prototype.forEach' => 'twenty-twenty-one-ie11-polyfills-asset',
+				'Element.prototype.matches && Element.prototype.closest && window.NodeList && NodeList.prototype.forEach' => 'granford-ie11-style-asset',
 			)
 		)
 	);
@@ -465,9 +466,9 @@ function twenty_twenty_one_scripts() {
 	// Main navigation scripts.
 	if ( has_nav_menu( 'primary' ) ) {
 		wp_enqueue_script(
-			'twenty-twenty-one-primary-navigation-script',
+			'grandford-primary-navigation-script',
 			get_template_directory_uri() . '/assets/js/primary-navigation.js',
-			array( 'twenty-twenty-one-ie11-polyfills' ),
+			array( 'granford-ie11-style' ),
 			wp_get_theme()->get( 'Version' ),
 			true
 		);
@@ -475,40 +476,45 @@ function twenty_twenty_one_scripts() {
 
 	// Responsive embeds script.
 	wp_enqueue_script(
-		'twenty-twenty-one-responsive-embeds-script',
+		'granford-responsive-embeds-script',
 		get_template_directory_uri() . '/assets/js/responsive-embeds.js',
-		array( 'twenty-twenty-one-ie11-polyfills' ),
+		array( 'granford-ie11-style' ),
 		wp_get_theme()->get( 'Version' ),
 		true
 	);
 
 	// Custom theme scripts.
-	if ( has_nav_menu( 'primary' ) ) {
-		wp_enqueue_script(
-			'twenty-twenty-one-custom-script',
-			get_template_directory_uri() . '/assets/js/custom.js',
-			array( 'twenty-twenty-one' ),
-			wp_get_theme()->get( 'Version' ),
-			true
-		);
+	wp_enqueue_script(
+		'granford-custom-script',
+		get_template_directory_uri() . '/assets/js/custom.js',
+		array( 'grandford' ),
+		wp_get_theme()->get( 'Version' ),
+		true
+	);
+	wp_enqueue_script(
+		'bootstrap-script',
+		get_template_directory_uri() . '/assets/js/library/bootstrap.min.js',
+		array( 'grandford' ),
+		wp_get_theme()->get( 'Version' ),
+		true
+	);
 	// aos library scripts.
-		wp_enqueue_script(
-			'twenty-twenty-one-aos-script',
-			get_template_directory_uri() . '/assets/js/library/aos.js',
-			array( 'twenty-twenty-one' ),
-			wp_get_theme()->get( 'Version' ),
-			true
-		);
-		wp_enqueue_script(
-			'twenty-twenty-one-slick-script',
-			get_template_directory_uri() . '/assets/js/library/slick.min.js',
-			array( 'twenty-twenty-one' ),
-			wp_get_theme()->get( 'Version' ),
-			true
-		);
-	}
+	wp_enqueue_script(
+		'granford-aos-script',
+		get_template_directory_uri() . '/assets/js/library/aos.js',
+		array( 'grandford' ),
+		wp_get_theme()->get( 'Version' ),
+		true
+	);
+	wp_enqueue_script(
+		'granford-slick-script',
+		get_template_directory_uri() . '/assets/js/library/slick.min.js',
+		array( 'grandford' ),
+		wp_get_theme()->get( 'Version' ),
+		true
+	);
 }
-add_action( 'wp_enqueue_scripts', 'twenty_twenty_one_scripts' );
+add_action( 'wp_enqueue_scripts', 'granford_scripts' );
 
 /**
  * Enqueue block editor script.
@@ -563,7 +569,7 @@ function twenty_twenty_one_non_latin_languages() {
 	$custom_css = twenty_twenty_one_get_non_latin_css( 'front-end' );
 
 	if ( $custom_css ) {
-		wp_add_inline_style( 'twenty-twenty-one-style', $custom_css );
+		wp_add_inline_style( 'granford-style', $custom_css );
 	}
 }
 add_action( 'wp_enqueue_scripts', 'twenty_twenty_one_non_latin_languages' );

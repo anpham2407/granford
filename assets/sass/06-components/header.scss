@@ -6,9 +6,17 @@
 	flex-wrap: wrap;
 	row-gap: var(--global--spacing-vertical); // Add space in case the menu wraps below the site branding.
 	position: relative;
+	z-index: 10;
 
 	.wp-custom-logo & {
 		align-items: center;
+		padding: 20px 0;
+		@include media(tablet) {
+			padding: 15px 0 20px;
+		}
+		@include media(desktop) {
+			padding: 25px 0 35px;
+		}
 	}
 
 	// @include media(mobile) {
@@ -84,11 +92,13 @@
 // Site logo
 .site-logo {
 
-	margin: calc(var(--global--spacing-vertical) / 2) 0;
+	margin-left: 50px;
+	@include media(tablet) {
+		margin: 0;
+	}
 
 	.site-header > & {
 		width: 100%;
-		padding-bottom: calc(var(--global--spacing-vertical) * 1.5);
 		border-bottom: 1px solid;
 		text-align: center;
 	}
@@ -101,6 +111,10 @@
 		height: auto;
 		display: inline-block;
 		width: auto;
+		width: 100px;
+		@include media(tablet) {
+			width: 120px;
+		}
 	}
 
 	@include media(mobile) {
@@ -128,7 +142,8 @@
 						position: absolute;
 						padding-top: calc(0.5 * var(--global--spacing-vertical));
 						margin-top: 0;
-						top: var(--global--admin-bar--height);
+						top: 17px;
+
 
 						.primary-navigation-open & {
 							display: none;
