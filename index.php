@@ -36,7 +36,7 @@ get_header(); ?>
 	</div>
 	<div class="what-news" data-aos="fade-up">
 		What's new at Granford
-		<?php echo twenty_twenty_one_get_icon_svg( 'ui', 'arrow_down' ); ?>
+		<i class="icon icon-arrow-down"></i>
 	</div>
 </div>
 
@@ -50,6 +50,7 @@ get_header(); ?>
 		</div>
 	</div>
 </div>
+
 <div class="image-bottom-content">
 	<img 
 		src="https://Granford.000webhostapp.com/wp-content/uploads/2022/01/banner-section.png"
