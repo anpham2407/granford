@@ -110,7 +110,7 @@ a:hover{
 }
 
 .header-banner .what-news{
-	padding: 20px 70px 10px;
+	padding: 20px 20px 10px;
 	background-color: #F2F0F0;
 	color: #FF6900;
 	display: flex;
@@ -425,7 +425,6 @@ a:hover{
 			padding: 0 20px;
 		}
 		.z-content{
-			padding-top: 20px;
 			position: relative;
 			@include media(mobile-only) {
 				display: flex;
@@ -438,6 +437,10 @@ a:hover{
 				}
 				img{
 					order: 1;
+					margin-left: -20px;
+					margin-right: -20px;
+					width: calc(100% + 40px);
+					max-width: calc(100% + 40px);
 				}
 			}
 			@include media(tablet) {
@@ -508,7 +511,7 @@ a:hover{
 	}
 	.space-mg-mb{
 		@include media(mobile-only) {
-			padding-bottom: 50px !important;
+			padding-bottom: 70px !important;
 		}
 	}
 	.primary-outline-btn{
@@ -598,7 +601,7 @@ a:hover{
 }
 .news-block .right-news-slider{
 	width: 100%;
-	padding: 40px;
+	padding: 40px 5vw;
 	@include media(tablet) {
 		padding: 0;
 	}
@@ -694,7 +697,7 @@ a:hover{
 }
 
 #features{
-	padding: 0 20px;
+	padding: 0 20px 40px;
 	.accordion-item{
 		background-color: #fff;
 		border-left: none;
