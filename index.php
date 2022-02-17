@@ -25,7 +25,7 @@ get_header(); ?>
 	<picture>
 		<source media="(min-width:768px)" srcset="http://13.212.87.234/wp-content/uploads/2022/02/hero-manufacture.jpg">
 		<img 
-			src="http://13.212.87.234/wp-content/uploads/2022/02/hero-manufacture.jpg"
+			src="http://13.212.87.234/wp-content/uploads/2022/02/hero-manufacturing-mobile.jpg"
 			class="attachment-full size-full hero-banner-img"
 			alt=""
 			style="width:100%"
@@ -34,7 +34,7 @@ get_header(); ?>
 	</picture>
 	
 	<div class="hero-content">
-		<div class="container">
+		<div class="container-lg">
 			<h4 class="tag color-secondary fw-bold text-uppercase" data-aos="fade-left" data-aos-delay="200" data-aos-anchor=".site">Contract Manufacturing</h4>
 			<h4 class="head" data-aos="fade-left" data-aos-delay="400" data-aos-anchor=".site">We Make It Happen.</h4>
 			<div class="desc" data-aos="fade-left" data-aos-delay="600" data-aos-anchor=".site">Working in close collaboration with our clients and our Asia resources, we proactively manage the entire manufacturing process on your behalf.</div>
@@ -42,8 +42,8 @@ get_header(); ?>
 	</div>
 </div>
 
-<div class="fullwidth hero-text bg-color-primary text-white">
-	<div class="container d-flex">
+<div class="fullwidth hero-text overflow-hidden bg-color-primary text-white">
+	<div class="container-lg d-md-flex">
 		<div class="left-text bg-color-primary font-3 font-head">
 			Outcome Stat or Win Goes Here. EX: We Deliver 40% Faster Than The Competition.
 		</div>
@@ -58,11 +58,11 @@ get_header(); ?>
 	</div>
 </div>
 
-<div class="container section my-6 key-1">
-  <div class="row align-items-center">
-    <div class="col">
+<div class="container section overflow-hidden my-5 mt-md-6 key-1">
+  <div class="row align-items-center flex-column flex-md-row">
+    <div class="col order-2 order-md-1">
 		<div class="block text-left">
-			<div class="color-gray font-tag mb-lg-4">
+			<div class="color-gray font-tag mb-4 mt-4 mb-lg-4 mt-lg-0 ">
 				What We Deliver
 			</div>
 			<div class="font-tag font-20 w-lg-75">
@@ -70,12 +70,12 @@ get_header(); ?>
 			</div>
 		</div>
     </div>
-    <div class="col">
+    <div class="col order-1 overflow-hidden order-md-2">
 		<div class="block text-right">
 			<picture>
 				<source media="(min-width:768px)" srcset="http://13.212.87.234/wp-content/uploads/2022/02/services-manufacturing-01.jpg">
 				<img 
-					src="http://13.212.87.234/wp-content/uploads/2022/02/services-manufacturing-01.jpg"
+					src="http://13.212.87.234/wp-content/uploads/2022/02/services-menufacturing-01-mobile.jpg"
 					class="attachment-full size-full hero-banner-img"
 					alt=""
 					style="width:100%"
@@ -87,14 +87,14 @@ get_header(); ?>
   </div>
 </div>
 
-<div class="container section my-6 key-2">
-  <div class="row align-items-center">
+<div class="container section overflow-hidden my-5 mt-md-6 key-2">
+  <div class="row align-items-center flex-column flex-md-row">
     <div class="col">
 		<div class="block text-left">
 			<picture>
 				<source media="(min-width:768px)" srcset="http://13.212.87.234/wp-content/uploads/2022/02/services-manufacturing-02.jpg">
 				<img 
-					src="http://13.212.87.234/wp-content/uploads/2022/02/services-manufacturing-02.jpg"
+					src="http://13.212.87.234/wp-content/uploads/2022/02/services-menufacturing-02-mobile.jpg"
 					class="attachment-full size-full hero-banner-img"
 					alt=""
 					style="width:100%"
@@ -104,8 +104,8 @@ get_header(); ?>
 		</div>
     </div>
     <div class="col">
-		<div class="block text-right ps-3">
-			<div class="color-gray font-tag mb-lg-4">
+		<div class="block text-right ps-md-3">
+			<div class="color-gray font-tag mb-4 mt-4 mb-lg-4 mt-lg-0">
 				Key Benefits 
 			</div>
 			<div class="font-tag font-20 w-lg-75">
@@ -116,11 +116,11 @@ get_header(); ?>
   </div>
 </div>
 
-<div class="container section my-6 key-3">
-  <div class="row align-items-center">
-    <div class="col">
+<div class="container section my-5 mt-md-6 key-3">
+  <div class="row align-items-center flex-column flex-md-row">
+    <div class="col order-2 order-md-1">
 		<div class="block text-left">
-			<div class="color-gray font-tag mb-lg-4">
+			<div class="color-gray font-tag mb-4 mt-4 mb-lg-4 mt-lg-0">
 				Working With Granford
 			</div>
 			<div class="font-tag font-20 w-lg-75">
@@ -128,12 +128,12 @@ get_header(); ?>
 			</div>
 		</div>
     </div>
-    <div class="col">
+    <div class="col order-1 order-md-2">
 		<div class="block text-right">
 			<picture>
 				<source media="(min-width:768px)" srcset="http://13.212.87.234/wp-content/uploads/2022/02/services-manufacturing-03.jpg">
 				<img 
-					src="http://13.212.87.234/wp-content/uploads/2022/02/services-manufacturing-03.jpg"
+					src="http://13.212.87.234/wp-content/uploads/2022/02/services-menufacturing-03-mobile.jpg"
 					class="attachment-full size-full hero-banner-img"
 					alt=""
 					style="width:100%"
@@ -145,7 +145,7 @@ get_header(); ?>
   </div>
 </div>
 
-<div class="container section my-6 request-quote">
+<div class="container section my-5 mt-md-6 request-quote">
   <div class="row align-items-center">
     <div class="col-12">
 		<div class="block text-center">

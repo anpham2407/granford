@@ -165,21 +165,14 @@
 	}
 
 	.hero-content {
-		padding: 20px;
-		position: absolute;
-		top: 50%;
-		transform: translate(0, -50%);
-		width: 100%;
-
-		@include media(tablet) {
-			-ms-transform: translateY(-50%);
-			transform: translateY(-50%);
-			padding: 0;
-		}
+		padding: 40px 10px;
 
 		@include media(desktop) {
+			position: absolute;
 			top: 50%;
 			transform: translate(0, -50%);
+			width: 100%;
+			padding: 20px;
 		}
 
 		.head {
@@ -190,11 +183,11 @@
 
 			@include media(tablet) {
 				font-size: 40px;
-				color: #fff;
 			}
 
 			@include media(desktop) {
 				font-size: 60px;
+				color: #fff;
 			}
 		}
 
@@ -205,13 +198,10 @@
 
 			@include media(tablet) {
 				margin-top: 30px;
-				font-size: 20px;
-				color: #fff;
 			}
 
 			@include media(desktop) {
-				margin-top: 30px;
-				font-size: 20px;
+				color: #fff;
 			}
 		}
 	}
@@ -220,10 +210,14 @@
 .hero-text {
 	margin-top: 0;
 	margin-bottom: 0;
+	padding: 40px 0;
 
 	@include media(tablet) {
 		display: flex;
 		margin-bottom: 30px;
+	}
+	@include media(desktop) {
+		padding: 0;
 	}
 
 	// @include media(desktop) {
@@ -231,30 +225,36 @@
 	// }
 	.left-text {
 		position: relative;
-		margin-top: -85px;
-		padding: 30px 30px 60px 0px;
+		padding: 10px;
 
-		@include media(tablet) {
-			flex: 0 0 360px;
+		@include media(mobile-only) {
+			&.font-head{
+				font-size: 23px;
+				line-height: 1.4;
+			}
 		}
 
 		@include media(desktop) {
 			flex: 0 0 600px;
-		}
-
-		&::before {
-			content: "";
-			position: absolute;
-			background-color: #1E22AA;
-			top: 0;
-			bottom: 0;
-			left: -100%;
-			right: 100%;
+			margin-top: -85px;
+			padding: 30px 30px 60px 0px;
+			&::before {
+				content: "";
+				position: absolute;
+				background-color: #1E22AA;
+				top: 0;
+				bottom: 0;
+				left: -100%;
+				right: 100%;
+			}
 		}
 	}
 
 	.right-text {
-		padding: 30px;
+		padding: 10px;
+		@include media(desktop) {
+			padding: 30px;
+		}
 	}
 }
 

@@ -7725,7 +7725,8 @@ body[data-aos-easing=ease-in-out-quart] [data-aos] {
 }
 
 .font-head {
-	font-size: 28px;
+	font-size: 24px;
+	line-height: 1.3;
 }
 @media only screen and (min-width: 592px) {
 
@@ -8137,25 +8138,16 @@ a:hover {
 }
 
 .hero-banner .hero-content {
-	padding: 20px;
-	position: absolute;
-	top: 50%;
-	transform: translate(0, -50%);
-	width: 100%;
-}
-@media only screen and (min-width: 592px) {
-
-	.hero-banner .hero-content {
-		-ms-transform: translateY(-50%);
-		transform: translateY(-50%);
-		padding: 0;
-	}
+	padding: 40px 10px;
 }
 @media only screen and (min-width: 822px) {
 
 	.hero-banner .hero-content {
+		position: absolute;
 		top: 50%;
 		transform: translate(0, -50%);
+		width: 100%;
+		padding: 20px;
 	}
 }
 
@@ -8169,13 +8161,13 @@ a:hover {
 
 	.hero-banner .hero-content .head {
 		font-size: 40px;
-		color: #fff;
 	}
 }
 @media only screen and (min-width: 822px) {
 
 	.hero-banner .hero-content .head {
 		font-size: 60px;
+		color: #fff;
 	}
 }
 
@@ -8188,21 +8180,19 @@ a:hover {
 
 	.hero-banner .hero-content .desc {
 		margin-top: 30px;
-		font-size: 20px;
-		color: #fff;
 	}
 }
 @media only screen and (min-width: 822px) {
 
 	.hero-banner .hero-content .desc {
-		margin-top: 30px;
-		font-size: 20px;
+		color: #fff;
 	}
 }
 
 .hero-text {
 	margin-top: 0;
 	margin-bottom: 0;
+	padding: 40px 0;
 }
 @media only screen and (min-width: 592px) {
 
@@ -8211,37 +8201,51 @@ a:hover {
 		margin-bottom: 30px;
 	}
 }
+@media only screen and (min-width: 822px) {
+
+	.hero-text {
+		padding: 0;
+	}
+}
 
 .hero-text .left-text {
 	position: relative;
-	margin-top: -85px;
-	padding: 30px 30px 60px 0;
+	padding: 10px;
 }
-@media only screen and (min-width: 592px) {
+@media only screen and (max-width: 481px) {
 
-	.hero-text .left-text {
-		flex: 0 0 360px;
+	.hero-text .left-text.font-head {
+		font-size: 23px;
+		line-height: 1.4;
 	}
 }
 @media only screen and (min-width: 822px) {
 
 	.hero-text .left-text {
 		flex: 0 0 600px;
+		margin-top: -85px;
+		padding: 30px 30px 60px 0;
+	}
+
+	.hero-text .left-text::before {
+		content: "";
+		position: absolute;
+		background-color: #1e22aa;
+		top: 0;
+		bottom: 0;
+		left: -100%;
+		right: 100%;
 	}
 }
 
-.hero-text .left-text::before {
-	content: "";
-	position: absolute;
-	background-color: #1e22aa;
-	top: 0;
-	bottom: 0;
-	left: -100%;
-	right: 100%;
-}
-
 .hero-text .right-text {
-	padding: 30px;
+	padding: 10px;
+}
+@media only screen and (min-width: 822px) {
+
+	.hero-text .right-text {
+		padding: 30px;
+	}
 }
 
 .primary-headline {
