@@ -23,9 +23,9 @@ get_header(); ?>
 
 <div class="hero-banner">
 	<picture>
-		<source media="(min-width:768px)" srcset="http://13.212.87.234/wp-content/uploads/2022/02/hero-manufacture.jpg">
+		<source media="(min-width:768px)" srcset="http://13.212.87.234/wp-content/uploads/2022/02/hero-about.jpg">
 		<img 
-			src="http://13.212.87.234/wp-content/uploads/2022/02/hero-manufacturing-mobile.jpg"
+			src="http://13.212.87.234/wp-content/uploads/2022/02/hero-about-mobile.jpg"
 			class="attachment-full size-full hero-banner-img"
 			alt=""
 			style="width:100%"
@@ -35,131 +35,64 @@ get_header(); ?>
 	
 	<div class="hero-content">
 		<div class="container-lg">
-			<h4 class="tag color-secondary fw-bold text-uppercase" data-aos="fade-left" data-aos-delay="200" data-aos-anchor=".site">Contract Manufacturing</h4>
-			<h4 class="head" data-aos="fade-left" data-aos-delay="400" data-aos-anchor=".site">We Make It Happen.</h4>
-			<div class="desc" data-aos="fade-left" data-aos-delay="600" data-aos-anchor=".site">Working in close collaboration with our clients and our Asia resources, we proactively manage the entire manufacturing process on your behalf.</div>
+			<h4 class="tag color-secondary fw-bold text-uppercase" data-aos="fade-left" data-aos-delay="200" data-aos-anchor=".site">Our Story</h4>
+			<h4 class="head" data-aos="fade-left" data-aos-delay="400" data-aos-anchor=".site">Expert Problem Solvers.</h4>
+			<div class="desc" data-aos="fade-left" data-aos-delay="600" data-aos-anchor=".site">We exist to provide innovative solutions to clients’ supply chain challenges. From sourcing and manufacturing to distribution and private labeling, our expertise and flexibility can help you win.</div>
 		</div>
 	</div>
 </div>
 
-<div class="fullwidth hero-text overflow-hidden bg-color-primary text-white">
+<div class="fullwidth hero-text bg-color-primary text-white mb-0 about-fix-height">
 	<div class="container-lg d-md-flex">
 		<div class="left-text bg-color-primary font-3 font-head">
-			Outcome Stat or Win Goes Here. EX: We Deliver 40% Faster Than The Competition.
+		Why You Should Choose Granford.
 		</div>
 		<div class="right-text bg-color-primary font-regular">
-			<div class="quote">
-				“Customer quote Lorem ipsum dolor sit amet, consectetur adipisicing sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.”
-			</div>
-			<div class="signa text-end font-regular">
-				— Customer Name, Company Name
-			</div>
 		</div>
 	</div>
 </div>
-
-<div class="container section overflow-hidden mt-md-6 key-1">
-  <div class="row align-items-center flex-column flex-md-row">
-    <div class="col order-2 order-md-1">
-		<div class="block text-left">
-			<div class="color-gray font-tag mb-1 mt-4 mb-lg-4 mt-lg-0 ">
-				What We Deliver
+<div class="fullwidth about-list-item">
+	<div class="container-lg">
+		<div class="row">
+			<div class="col-12 col-md-4 mt-3 mt-md-0" data-aos="fade-up" data-aos-delay="200">
+				<div class="card border-0">
+					<img src="http://13.212.87.234/wp-content/uploads/2022/02/about-item-1.jpg" class="card-img-top" alt="A Trusted Partner">
+					<div class="card-body px-0">
+						<h5 class="card-title font-head primary-color font-3 fw-normal mt-2 mt-md-3">A Trusted Partner</h5>
+						<p class="card-text font-20">Fortune 1000 clients trust Granford because we listen to their challenges, closely collaborate with them to identify the best solutions—then deliver on our promises.</p>
+					</div>
+				</div>
 			</div>
-			<div class="font-regular font-20 w-lg-75">
-				Granford partners with trusted local manufacturers in the MITI-V region and China to produce goods to your exact specifications, cost, and timeline. Whether it’s an existing product or a new, customized item designed for shifting market demands, we’ll select the ideal manufacturer and coordinate everything needed for success.
+			<div class="col-12 col-md-4 mt-4 mt-md-0" data-aos="fade-up" data-aos-delay="400">
+				<div class="card border-0">
+					<img src="http://13.212.87.234/wp-content/uploads/2022/02/about-item-2.jpg" class="card-img-top" alt="A Trusted Partner">
+					<div class="card-body px-0">
+						<h5 class="card-title font-head primary-color font-3 fw-normal mt-2 mt-md-3">A Proven Network</h5>
+						<p class="card-text font-20">Over the years, we’ve built trusted, local relationships with resources across the MITI-V region and China. Let us put this proven network to work for you.</p>
+					</div>
+				</div>
 			</div>
-		</div>
-    </div>
-    <div class="col order-1 overflow-hidden order-md-2">
-		<div class="block text-right">
-			<picture>
-				<source media="(min-width:768px)" srcset="http://13.212.87.234/wp-content/uploads/2022/02/services-manufacturing-01.jpg">
-				<img 
-					src="http://13.212.87.234/wp-content/uploads/2022/02/services-menufacturing-01-mobile.jpg"
-					class="attachment-full size-full hero-banner-img"
-					alt=""
-					style="width:100%"
-					data-aos="fade-down" data-aos-anchor=".key-1"
-				>
-			</picture>
-		</div>
-    </div>
-  </div>
+			<div class="col-12 col-md-4 mt-4 mt-md-0" data-aos="fade-up" data-aos-delay="600">
+				<div class="card border-0">
+					<img src="http://13.212.87.234/wp-content/uploads/2022/02/about-item-3.jpg" class="card-img-top" alt="A Trusted Partner">
+					<div class="card-body px-0">
+						<h5 class="card-title font-head primary-color font-3 fw-normal mt-2 mt-md-3">Dedicated to Your Success</h5>
+						<p class="card-text font-20">We’re focused on being service-driven and responsive—anticipating your needs and proactively addressing issues. By championing your interests, we provide peace of mind—and real results.</p>
+					</div>
+				</div>
+			</div>
+  		</div>
+	</div>
+	</div>
 </div>
 
-<div class="container section overflow-hidden mt-md-6 key-2">
-  <div class="row align-items-center flex-column flex-md-row">
-    <div class="col">
-		<div class="block text-left">
-			<picture>
-				<source media="(min-width:768px)" srcset="http://13.212.87.234/wp-content/uploads/2022/02/services-manufacturing-02.jpg">
-				<img 
-					src="http://13.212.87.234/wp-content/uploads/2022/02/services-menufacturing-02-mobile.jpg"
-					class="attachment-full size-full hero-banner-img"
-					alt=""
-					style="width:100%"
-					data-aos="fade-down" data-aos-anchor=".key-2"
-				>
-			</picture>
+<div class="image-bottom-content">
+	<div class="bottom maxwidth text-center">
+		<div class="content box-small">
+		Let’s talk about how Granford—and our deep network of resources—can help problem-solve your supply chain challenges. 
 		</div>
-    </div>
-    <div class="col">
-		<div class="block text-right ps-md-3">
-			<div class="color-gray font-tag mb-1 mt-4 mb-lg-4 mt-lg-0">
-				Key Benefits
-			</div>
-			<div class="font-regular font-20 w-lg-75">
-				Working with Granford, you’ll have the assurance of cost-effective quality, optimal production capacity, and reliability from a company with deep relationships throughout the region. Every detail is covered; we’ll closely manage production, testing, packaging, compliance, and all the other steps along the way.
-			</div>
-		</div>
-    </div>
-  </div>
-</div>
-
-<div class="container section mt-md-6 key-3">
-  <div class="row align-items-center flex-column flex-md-row">
-    <div class="col order-2 order-md-1">
-		<div class="block text-left">
-			<div class="color-gray font-tag mb-1 mt-4 mb-lg-4 mt-lg-0">
-				Working With Granford
-			</div>
-			<div class="font-regular font-20 w-lg-75">
-				We understand that the manufacturing journey can include unexpected changes to specifications, quantities, timing, packaging, and more, based on your needs. That’s why we work so closely with our clients and remain highly flexible, with the ability to quickly shift gears and manage change to ensure your success.
-			</div>
-		</div>
-    </div>
-    <div class="col order-1 order-md-2">
-		<div class="block text-right">
-			<picture>
-				<source media="(min-width:768px)" srcset="http://13.212.87.234/wp-content/uploads/2022/02/services-manufacturing-03.jpg">
-				<img 
-					src="http://13.212.87.234/wp-content/uploads/2022/02/services-menufacturing-03-mobile.jpg"
-					class="attachment-full size-full hero-banner-img"
-					alt=""
-					style="width:100%"
-					data-aos="fade-down" data-aos-anchor=".key-3"
-				>
-			</picture>
-		</div>
-    </div>
-  </div>
-</div>
-
-<div class="container section mt-md-6 request-quote">
-  <div class="row align-items-center">
-    <div class="col-12">
-		<div class="block text-center">
-			<div class="color-gray font-regular font-3 w-lg-50 m-auto">
-				Let us share what’s possible and prove our expertise in contract manufacturing. 
-			</div>
-		</div>
-    </div>
-    <div class="col-12">
-		<div class="block text-center mt-4">
-			<a href="#" class="primary-btn">Request a Quote</a>
-		</div>
-    </div>
-  </div>
+		<a class="primary-btn" href="javascript:;">REQUEST A QUOTE</a>
+	</div>
 </div>
 <?php
 // if ( have_posts() ) {
