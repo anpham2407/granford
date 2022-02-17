@@ -58,14 +58,14 @@ get_header(); ?>
 	</div>
 </div>
 
-<div class="container section overflow-hidden my-5 mt-md-6 key-1">
+<div class="container section overflow-hidden mt-md-6 key-1">
   <div class="row align-items-center flex-column flex-md-row">
     <div class="col order-2 order-md-1">
 		<div class="block text-left">
-			<div class="color-gray font-tag mb-4 mt-4 mb-lg-4 mt-lg-0 ">
+			<div class="color-gray font-tag mb-1 mt-4 mb-lg-4 mt-lg-0 ">
 				What We Deliver
 			</div>
-			<div class="font-tag font-20 w-lg-75">
+			<div class="font-regular font-20 w-lg-75">
 				Granford partners with trusted local manufacturers in the MITI-V region and China to produce goods to your exact specifications, cost, and timeline. Whether it’s an existing product or a new, customized item designed for shifting market demands, we’ll select the ideal manufacturer and coordinate everything needed for success.
 			</div>
 		</div>
@@ -87,7 +87,7 @@ get_header(); ?>
   </div>
 </div>
 
-<div class="container section overflow-hidden my-5 mt-md-6 key-2">
+<div class="container section overflow-hidden mt-md-6 key-2">
   <div class="row align-items-center flex-column flex-md-row">
     <div class="col">
 		<div class="block text-left">
@@ -105,10 +105,10 @@ get_header(); ?>
     </div>
     <div class="col">
 		<div class="block text-right ps-md-3">
-			<div class="color-gray font-tag mb-4 mt-4 mb-lg-4 mt-lg-0">
-				Key Benefits 
+			<div class="color-gray font-tag mb-1 mt-4 mb-lg-4 mt-lg-0">
+				Key Benefits
 			</div>
-			<div class="font-tag font-20 w-lg-75">
+			<div class="font-regular font-20 w-lg-75">
 				Working with Granford, you’ll have the assurance of cost-effective quality, optimal production capacity, and reliability from a company with deep relationships throughout the region. Every detail is covered; we’ll closely manage production, testing, packaging, compliance, and all the other steps along the way.
 			</div>
 		</div>
@@ -116,14 +116,14 @@ get_header(); ?>
   </div>
 </div>
 
-<div class="container section my-5 mt-md-6 key-3">
+<div class="container section mt-md-6 key-3">
   <div class="row align-items-center flex-column flex-md-row">
     <div class="col order-2 order-md-1">
 		<div class="block text-left">
-			<div class="color-gray font-tag mb-4 mt-4 mb-lg-4 mt-lg-0">
+			<div class="color-gray font-tag mb-1 mt-4 mb-lg-4 mt-lg-0">
 				Working With Granford
 			</div>
-			<div class="font-tag font-20 w-lg-75">
+			<div class="font-regular font-20 w-lg-75">
 				We understand that the manufacturing journey can include unexpected changes to specifications, quantities, timing, packaging, and more, based on your needs. That’s why we work so closely with our clients and remain highly flexible, with the ability to quickly shift gears and manage change to ensure your success.
 			</div>
 		</div>
@@ -145,11 +145,11 @@ get_header(); ?>
   </div>
 </div>
 
-<div class="container section my-5 mt-md-6 request-quote">
+<div class="container section mt-md-6 request-quote">
   <div class="row align-items-center">
     <div class="col-12">
 		<div class="block text-center">
-			<div class="color-gray font-24 font-3 w-lg-50 m-auto">
+			<div class="color-gray font-regular font-3 w-lg-50 m-auto">
 				Let us share what’s possible and prove our expertise in contract manufacturing. 
 			</div>
 		</div>

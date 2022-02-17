@@ -165,7 +165,7 @@
 	}
 
 	.hero-content {
-		padding: 40px 10px;
+		padding: 40px 0;
 
 		@include media(desktop) {
 			position: absolute;
@@ -225,7 +225,6 @@
 	// }
 	.left-text {
 		position: relative;
-		padding: 10px;
 
 		@include media(mobile-only) {
 			&.font-head{
@@ -251,7 +250,6 @@
 	}
 
 	.right-text {
-		padding: 10px;
 		@include media(desktop) {
 			padding: 30px;
 		}
@@ -926,5 +924,14 @@
 				}
 			}
 		}
+	}
+}
+.key-1,
+.key-2,
+.key-3,
+.request-quote{
+	@include media(tablet-only) {
+		margin-top: 15px;
+		margin-bottom: 40px;
 	}
 }
