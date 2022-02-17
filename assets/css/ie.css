@@ -9765,6 +9765,14 @@ body[data-aos-easing=ease-in-out-quart] [data-aos] {
 	}
 }
 
+@media (min-width: 768px) {
+
+	.mt-md-6 {
+		margin-top: 6rem;
+		margin-bottom: 6rem;
+	}
+}
+
 [class^=icon-],
 [class*=" icon-"] {
 
@@ -10138,7 +10146,6 @@ a:hover {
 
 .hero-text .left-text {
 	position: relative;
-	padding: 10px;
 }
 @media only screen and (max-width: 481px) {
 
@@ -10164,10 +10171,6 @@ a:hover {
 		left: -100%;
 		right: 100%;
 	}
-}
-
-.hero-text .right-text {
-	padding: 10px;
 }
 @media only screen and (min-width: 822px) {
 
