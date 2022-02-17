@@ -236,6 +236,13 @@
   }
 }
 
+.mt-md-6 {
+  @media (min-width: 768px) {
+    margin-top: 6rem;
+    margin-bottom: 6rem;
+  }
+}
+
 [class^="icon-"],
 [class*=" icon-"] {
   /* use !important to prevent issues with browser extensions that change fonts */

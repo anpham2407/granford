@@ -6686,6 +6686,13 @@ footer {
   }
 }
 
+@media (min-width: 768px) {
+  .mt-md-6 {
+    margin-top: 6rem;
+    margin-bottom: 6rem;
+  }
+}
+
 [class^=icon-],
 [class*=" icon-"] {
   /* use !important to prevent issues with browser extensions that change fonts */
