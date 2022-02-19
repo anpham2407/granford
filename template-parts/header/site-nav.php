@@ -11,7 +11,7 @@
 
 <?php if ( has_nav_menu( 'primary' ) ) : ?>
 	<div class="request-btn">
-		<a href="#">REQUEST A QUOTE</a>
+		<a href="/contact">REQUEST A QUOTE</a>
 	</div>
 	<nav id="site-navigation" class="primary-navigation" role="navigation" aria-label="<?php esc_attr_e( 'Primary menu', 'twentytwentyone' ); ?>">
 		<div class="menu-button-container">
