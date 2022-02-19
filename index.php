@@ -27,12 +27,17 @@ get_header(); ?>
 			</div>
 		</div>
 	</div>
+</div>
+
+<div class="wide-max-width">
 	<div class="fullwidth news-list pb-lg-5">
 		<div class="container-lg p-lg-0">
-			<?php echo do_shortcode( '[recent_posts num="20" cat="" order=""]' ); ?>
+			[recent_posts num="20" cat="" order=""]
 		</div>
 	</div>
+</div>
 
+<div class="wide-max-width">
 	<div class="fullwidth contact-body mt-4 mb-3 mt-lg-5 mb-lg-5">
 		<div class="container-lg p-lg-0">
 			<div class="row">
@@ -45,7 +50,7 @@ get_header(); ?>
 				</div>
 				<div class="right-side col-12 col-md-6 mt-4 mt-md-0">
 					<div class="card border-0 px-md-5">
-						<?php echo do_shortcode( '[contact-form-7 id="147"]' ); ?>
+						[contact-form-7 id="303"]
 					</div>
 				</div>
 			</div>

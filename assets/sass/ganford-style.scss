@@ -1061,3 +1061,15 @@
 		}
 	}
 }
+
+.entry-fix-width{
+	max-width: 800px;
+}
+.singular{
+	.post-thumbnail{
+		img{
+			width: 100% !important;
+			max-width: 100% !important;
+		}
+	}
+}
