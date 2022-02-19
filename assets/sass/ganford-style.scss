@@ -237,14 +237,26 @@
 			flex: 0 0 600px;
 			margin-top: -85px;
 			padding: 30px 30px 60px 0px;
-			&::before {
-				content: "";
-				position: absolute;
-				background-color: #1E22AA;
-				top: 0;
-				bottom: 0;
-				left: -100%;
-				right: 100%;
+			&.bg-color-primary,
+			&.bg-white{
+				&::before {
+					content: "";
+					position: absolute;
+					top: 0;
+					bottom: 0;
+					left: -100%;
+					right: 100%;
+				}
+			}
+			&.bg-color-primary{
+				&::before {
+					background-color: #1E22AA;
+				}
+			}
+			&.bg-white{
+				&::before {
+					background-color: #fff;
+				}
 			}
 		}
 	}
@@ -256,7 +268,13 @@
 	}
 }
 
-
+.hero-text-contact-fix-space{
+	.left-text{
+		padding: 30px 30px 30px 0;
+		margin-top: -60px;
+		line-height: 1;
+	}
+}
 
 .primary-headline {
 	font-size: 28px;
@@ -943,5 +961,42 @@
 .about-list-item{
 	@include media(desktop) {
 		margin-top: -120px;
+	}
+}
+.contact-body{
+	.left-side{
+		flex-basis: 600px;
+	}
+	.right-side{
+		flex-grow: 1;
+	}
+	.card{
+		
+	}
+}
+
+//custom style contact form 7
+.wpcf7{
+	.wpcf7-not-valid-tip {
+		color: var(--global--color-secondary-orange);
+		font-size: var(--global--button-font-size-base);
+		font-weight: normal;
+		display: block;
+	}
+
+	.wpcf7-not-valid{
+		border-color: var(--global--color-secondary-orange);
+	}
+
+	.wpcf7-response-output{
+		// position: fixed;
+		background: var(--global--color-secondary-orange);;
+		// top: 0;
+		width: 100%;
+		// left: 0;
+		border: none !important;
+		// text-align: center;
+		color: var(--global--color-white);
+		margin: 2em 2px 1em !important;
 	}
 }

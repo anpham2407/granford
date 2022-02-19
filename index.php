@@ -23,9 +23,9 @@ get_header(); ?>
 
 <div class="hero-banner">
 	<picture>
-		<source media="(min-width:768px)" srcset="http://13.212.87.234/wp-content/uploads/2022/02/hero-about.jpg">
+		<source media="(min-width:768px)" srcset="http://13.212.87.234/wp-content/uploads/2022/02/hero-contact.jpg">
 		<img 
-			src="http://13.212.87.234/wp-content/uploads/2022/02/hero-about-mobile.jpg"
+			src="http://13.212.87.234/wp-content/uploads/2022/02/hero-contact-mobile.jpg"
 			class="attachment-full size-full hero-banner-img"
 			alt=""
 			style="width:100%"
@@ -35,63 +35,46 @@ get_header(); ?>
 	
 	<div class="hero-content">
 		<div class="container-lg">
-			<h4 class="tag color-secondary fw-bold text-uppercase" data-aos="fade-left" data-aos-delay="200" data-aos-anchor=".site">Our Story</h4>
-			<h4 class="head" data-aos="fade-left" data-aos-delay="400" data-aos-anchor=".site">Expert Problem Solvers.</h4>
-			<div class="desc" data-aos="fade-left" data-aos-delay="600" data-aos-anchor=".site">We exist to provide innovative solutions to clients’ supply chain challenges. From sourcing and manufacturing to distribution and private labeling, our expertise and flexibility can help you win.</div>
+			<h4 class="head" data-aos="fade-left" data-aos-delay="200" data-aos-anchor=".site">Let’s Connect.</h4>
 		</div>
 	</div>
 </div>
 
-<div class="fullwidth hero-text bg-color-primary text-white mb-0 about-fix-height">
+<div class="fullwidth hero-text mb-0 hero-text-contact-fix-space">
 	<div class="container-lg d-md-flex">
-		<div class="left-text bg-color-primary font-3 font-head">
-		Why You Should Choose Granford.
+		<div class="left-text bg-white font-3 font-head primary-color">
+			Let’s Connect.
 		</div>
-		<div class="right-text bg-color-primary font-regular">
+		<div class="right-text bg-white font-regular">
 		</div>
 	</div>
 </div>
-<div class="fullwidth about-list-item">
+
+<div class="fullwidth contact-body mb-5">
 	<div class="container-lg">
 		<div class="row">
-			<div class="col-12 col-md-4 mt-3 mt-md-0" data-aos="fade-up" data-aos-delay="200">
-				<div class="card border-0">
-					<img src="http://13.212.87.234/wp-content/uploads/2022/02/about-item-1.jpg" class="card-img-top" alt="A Trusted Partner">
-					<div class="card-body px-0">
-						<h5 class="card-title font-head primary-color font-3 fw-normal mt-2 mt-md-3">A Trusted Partner</h5>
-						<p class="card-text font-20">Fortune 1000 clients trust Granford because we listen to their challenges, closely collaborate with them to identify the best solutions—then deliver on our promises.</p>
+			<div class="left-side col-12 col-md-6 mt-3 mt-md-0" data-aos="fade-up">
+				<div class="card border-0 h-100 justify-content-between">
+					<div class="introduce font-regular">
+						The Granford team—backed by our deep network of resources—is ready to help problem-solve your supply chain challenges. 
+					</div>
+					<div class="address font-30 mb-5 text-dark" style="max-width: 280px">
+						<div class="fw-bold text-uppercase">US Headquarters</div>
+						<div class="fw-regular">900 Riverdale Street, #187 West Springfield, MA 01089</div><br>
+
+						<div class="fw-bold text-uppercase">US Distribution Center</div>
+						<div class="fw-regular">1545 E. Locust Street Ontario, CA 91761</div><br><br>
 					</div>
 				</div>
 			</div>
-			<div class="col-12 col-md-4 mt-4 mt-md-0" data-aos="fade-up" data-aos-delay="400">
-				<div class="card border-0">
-					<img src="http://13.212.87.234/wp-content/uploads/2022/02/about-item-2.jpg" class="card-img-top" alt="A Trusted Partner">
-					<div class="card-body px-0">
-						<h5 class="card-title font-head primary-color font-3 fw-normal mt-2 mt-md-3">A Proven Network</h5>
-						<p class="card-text font-20">Over the years, we’ve built trusted, local relationships with resources across the MITI-V region and China. Let us put this proven network to work for you.</p>
-					</div>
-				</div>
-			</div>
-			<div class="col-12 col-md-4 mt-4 mt-md-0" data-aos="fade-up" data-aos-delay="600">
-				<div class="card border-0">
-					<img src="http://13.212.87.234/wp-content/uploads/2022/02/about-item-3.jpg" class="card-img-top" alt="A Trusted Partner">
-					<div class="card-body px-0">
-						<h5 class="card-title font-head primary-color font-3 fw-normal mt-2 mt-md-3">Dedicated to Your Success</h5>
-						<p class="card-text font-20">We’re focused on being service-driven and responsive—anticipating your needs and proactively addressing issues. By championing your interests, we provide peace of mind—and real results.</p>
-					</div>
+			<div class="right-side col-12 col-md-6 mt-4 mt-md-0" data-aos="fade-up" data-aos-delay="200">
+				<div class="card border-0 px-md-5">
+					<?php echo do_shortcode( '[contact-form-7 id="147"]' ); ?>
+
 				</div>
 			</div>
   		</div>
 	</div>
-	</div>
-</div>
-
-<div class="image-bottom-content">
-	<div class="bottom maxwidth text-center">
-		<div class="content box-small">
-		Let’s talk about how Granford—and our deep network of resources—can help problem-solve your supply chain challenges. 
-		</div>
-		<a class="primary-btn" href="javascript:;">REQUEST A QUOTE</a>
 	</div>
 </div>
 <?php

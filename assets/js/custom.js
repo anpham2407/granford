@@ -89,4 +89,13 @@ jQuery(document).ready(function($) {
 		  ]
 	});
 
+	// handle submit contact form 7
+	// $('body').off('click','.wpcf7-submit').on('click','.wpcf7-submit', function(e){
+	// 	e.preventDefault();
+	// 	console.log('ahihi');
+	// 	return;
+	// })
+	document.addEventListener( 'wpcf7invalid', function( event ) {
+		document.querySelector(".wpcf7").scrollIntoView({ behavior: 'smooth' });
+	}, false );
 });

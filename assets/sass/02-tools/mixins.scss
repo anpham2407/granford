@@ -29,13 +29,14 @@
 	line-height: var(--button--line-height);
 	padding: var(--button--padding-vertical) var(--button--padding-horizontal);
 	text-decoration: none;
+	transition: all .3s ease;
 
 	// Standard Button Color Relationship Logic
 	&:not(:hover):not(:active) {
 
 		// Text colors
 		&:not(.has-text-color) {
-			color: var(--global--color-background);
+			color: var(--global--color-white);
 
 			// Nested
 			.has-background & {
@@ -49,11 +50,11 @@
 
 		// Background-colors
 		&:not(.has-background) {
-			background-color: var(--global--color-primary);
+			background-color: var(--global--color-secondary);
 
 			// Nested
 			.has-background & {
-				background-color: var(--local--color-primary, var(--global--color-primary));
+				background-color: var(--local--color-secondary, var(--global--color-secondarys));
 			}
 		}
 	}

@@ -78,14 +78,14 @@
 			.wp-block-search__button {
 				// Search button always needs black contrast against white form background
 				&:hover {
-					color: var(--global--color-dark-gray);
+					color: var(--global--color-primary-blue);
 				}
 
 				.is-dark-theme & {
-					color: var(--global--color-dark-gray);
+					color: var(--global--color-primary-blue);
 
 					&:hover {
-						background-color: var(--global--color-dark-gray);
+						background-color: var(--global--color-primary-blue);
 						color: var(--global--color-white);
 					}
 				}

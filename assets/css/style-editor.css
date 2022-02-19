@@ -21,7 +21,8 @@
 	--global--font-3rd: var(--font-base, Roboto Slab, -apple-system, BlinkMacSystemFont, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif);
 
 	/* Font Size */
-	--global--font-size-base: 1.25rem;
+	--global--button-font-size-base: 0.875rem;
+	--global--font-size-base: 1rem;
 	--global--font-size-xs: 1rem;
 	--global--font-size-sm: 1.125rem;
 	--global--font-size-md: 1.25rem;
@@ -29,7 +30,7 @@
 	--global--font-size-xl: 2.25rem;
 	--global--font-size-xxl: 4rem;
 	--global--font-size-xxxl: 5rem;
-	--global--font-size-page-title: var(--global--font-size-xxl);
+	--global--font-size-page-title: var(--global--font-size-xl);
 	--global--letter-spacing: normal;
 
 	/* Line Height */
@@ -71,8 +72,10 @@
 
 	/* Colors */
 	--global--color-black: #000;
-	--global--color-dark-gray: #28303d;
-	--global--color-gray: #39414d;
+	--global--color-primary-blue: #1e22aa;
+	--global--color-secondary-orange: #ff6900;
+	--global--color-gray: #777;
+	--global--color-gray-text: #53565a;
 	--global--color-light-gray: #f0f0f0;
 	--global--color-green: #d1e4dd;
 	--global--color-blue: #d1dfe4;
@@ -83,17 +86,17 @@
 	--global--color-white: #fff;
 	--global--color-white-50: rgba(255, 255, 255, 0.5);
 	--global--color-white-90: rgba(255, 255, 255, 0.9);
-	--global--color-primary: var(--global--color-dark-gray);
+	--global--color-primary: var(--global--color-primary-blue);
 
 	/* Body text color, site title, footer text color. */
-	--global--color-secondary: var(--global--color-gray);
+	--global--color-secondary: var(--global--color-secondary-orange);
 
 	/* Headings */
 	--global--color-primary-hover: var(--global--color-primary);
 	--global--color-background: var(--global--color-green);
 
 	/* Mint, default body background */
-	--global--color-border: var(--global--color-primary);
+	--global--color-border: var(--global--color-gray-text);
 
 	/* Used for borders (separators) */
 
@@ -110,11 +113,11 @@
 	--form--font-family: var(--global--font-secondary);
 	--form--font-size: var(--global--font-size-sm);
 	--form--line-height: var(--global--line-height-body);
-	--form--color-text: var(--global--color-dark-gray);
-	--form--color-ranged: var(--global--color-secondary);
+	--form--color-text: var(--global--color-primary-blue);
+	--form--color-ranged: var(--global--color-gray-text);
 	--form--label-weight: 500;
-	--form--border-color: var(--global--color-secondary);
-	--form--border-width: 3px;
+	--form--border-color: var(--global--color-gray-text);
+	--form--border-width: 1px;
 	--form--border-radius: 0;
 	--form--spacing-unit: calc(0.5 * var(--global--spacing-unit));
 
@@ -130,16 +133,16 @@
 	--button--color-background: var(--global--color-secondary);
 	--button--color-background-active: var(--global--color-background);
 	--button--font-family: var(--global--font-primary);
-	--button--font-size: var(--global--font-size-base);
+	--button--font-size: var(--global--button-font-size-base);
 	--button--font-weight: 500;
 	--button--line-height: 1.5;
-	--button--border-width: 3px;
+	--button--border-width: 1px;
 	--button--border-radius: 0;
-	--button--padding-vertical: 15px;
+	--button--padding-vertical: 10px;
 	--button--padding-horizontal: calc(2 * var(--button--padding-vertical));
 
 	/* entry */
-	--entry-header--color: var(--global--color-primary);
+	--entry-header--color: var(--global--color-gray-text);
 	--entry-header--color-link: currentColor;
 	--entry-header--color-hover: var(--global--color-primary-hover);
 	--entry-header--color-focus: var(--global--color-secondary);
@@ -149,8 +152,8 @@
 	--entry-author-bio--font-size: var(--heading--font-size-h4);
 
 	/* Header */
-	--branding--color-text: var(--global--color-primary);
-	--branding--color-link: var(--global--color-primary);
+	--branding--color-text: var(--global--color-gray-text);
+	--branding--color-link: var(---global--color-gray-text);
 	--branding--color-link-hover: var(--global--color-secondary);
 	--branding--title--font-family: var(--global--font-primary);
 	--branding--title--font-size: var(--global--font-size-lg);
@@ -177,14 +180,14 @@
 	--primary-nav--font-style-sub-menu-mobile: normal;
 	--primary-nav--font-weight: normal;
 	--primary-nav--font-weight-button: 500;
-	--primary-nav--color-link: var(--global--color-primary);
+	--primary-nav--color-link: var(--global--color-gray-text);
 	--primary-nav--color-link-hover: var(--global--color-primary-hover);
-	--primary-nav--color-text: var(--global--color-primary);
+	--primary-nav--color-text: var(--global--color-gray-text);
 	--primary-nav--padding: calc(0.66 * var(--global--spacing-unit));
-	--primary-nav--border-color: var(--global--color-primary);
+	--primary-nav--border-color: var(--global--color-gray-text);
 
 	/* Pagination */
-	--pagination--color-text: var(--global--color-primary);
+	--pagination--color-text: var(--global--color-gray-text);
 	--pagination--color-link-hover: var(--global--color-primary-hover);
 	--pagination--font-family: var(--global--font-secondary);
 	--pagination--font-size: var(--global--font-size-lg);
@@ -192,8 +195,8 @@
 	--pagination--font-weight-strong: 600;
 
 	/* Footer */
-	--footer--color-text: var(--global--color-primary);
-	--footer--color-link: var(--global--color-primary);
+	--footer--color-text: var(--global--color-gray-text);
+	--footer--color-link: var(--global--color-gray-text);
 	--footer--color-link-hover: var(--global--color-primary-hover);
 	--footer--font-family: var(--global--font-primary);
 	--footer--font-size: var(--global--font-size-sm);
@@ -205,8 +208,8 @@
 	--pullquote--letter-spacing: var(--heading--letter-spacing-h4);
 	--pullquote--line-height: var(--global--line-height-heading);
 	--pullquote--border-width: 3px;
-	--pullquote--border-color: var(--global--color-primary);
-	--pullquote--color-foreground: var(--global--color-primary);
+	--pullquote--border-color: var(--global--color-gray-text);
+	--pullquote--color-foreground: var(--global--color-gray-text);
 	--pullquote--color-background: var(--global--color-background);
 	--quote--font-family: var(--global--font-secondary);
 	--quote--font-size: var(--global--font-size-md);
@@ -224,7 +227,7 @@
 	/* Block: Table */
 	--table--stripes-border-color: var(--global--color-light-gray);
 	--table--stripes-background-color: var(--global--color-light-gray);
-	--table--has-background-text-color: var(--global--color-dark-gray);
+	--table--has-background-text-color: var(--global--color-primary-blue);
 
 	/* Widgets */
 	--widget--line-height-list: 1.9;
@@ -252,8 +255,8 @@
 		--global--font-size-xl: 2.5rem;
 		--global--font-size-xxl: 6rem;
 		--global--font-size-xxxl: 9rem;
-		--heading--font-size-h3: 2rem;
-		--heading--font-size-h2: 3rem;
+		--heading--font-size-h3: 1.875;
+		--heading--font-size-h2: 2.5rem;
 	}
 }
 
@@ -543,10 +546,11 @@ a:hover {
 	line-height: var(--button--line-height);
 	padding: var(--button--padding-vertical) var(--button--padding-horizontal);
 	text-decoration: none;
+	transition: all 0.3s ease;
 }
 
 .wp-block-button__link:not(:hover):not(:active):not(.has-text-color) {
-	color: var(--global--color-background);
+	color: var(--global--color-white);
 }
 
 .has-background .wp-block-button__link:not(:hover):not(:active):not(.has-text-color) {
@@ -558,11 +562,11 @@ a:hover {
 }
 
 .wp-block-button__link:not(:hover):not(:active):not(.has-background) {
-	background-color: var(--global--color-primary);
+	background-color: var(--global--color-secondary);
 }
 
 .has-background .wp-block-button__link:not(:hover):not(:active):not(.has-background) {
-	background-color: var(--local--color-primary, var(--global--color-primary));
+	background-color: var(--local--color-secondary, var(--global--color-secondarys));
 }
 
 .wp-block-button__link:hover,
@@ -894,11 +898,12 @@ a:hover {
 	line-height: var(--button--line-height);
 	padding: var(--button--padding-vertical) var(--button--padding-horizontal);
 	text-decoration: none;
+	transition: all 0.3s ease;
 	display: inline-block;
 }
 
 .wp-block-file .wp-block-file__button:not(:hover):not(:active):not(.has-text-color) {
-	color: var(--global--color-background);
+	color: var(--global--color-white);
 }
 
 .has-background .wp-block-file .wp-block-file__button:not(:hover):not(:active):not(.has-text-color) {
@@ -910,11 +915,11 @@ a:hover {
 }
 
 .wp-block-file .wp-block-file__button:not(:hover):not(:active):not(.has-background) {
-	background-color: var(--global--color-primary);
+	background-color: var(--global--color-secondary);
 }
 
 .has-background .wp-block-file .wp-block-file__button:not(:hover):not(:active):not(.has-background) {
-	background-color: var(--local--color-primary, var(--global--color-primary));
+	background-color: var(--local--color-secondary, var(--global--color-secondarys));
 }
 
 .wp-block-file .wp-block-file__button:hover,
@@ -1111,7 +1116,7 @@ h6,
 }
 
 [data-type="core/html"] textarea {
-	color: var(--global--color-dark-gray);
+	color: var(--global--color-primary-blue);
 	border-radius: 0;
 	padding: var(--global--spacing-unit);
 }
@@ -1837,12 +1842,13 @@ pre.wp-block-preformatted {
 	line-height: var(--button--line-height);
 	padding: var(--button--padding-vertical) var(--button--padding-horizontal);
 	text-decoration: none;
+	transition: all 0.3s ease;
 	box-shadow: none;
 	margin-left: 0;
 }
 
 .wp-block-search .wp-block-search__button.wp-block-search__button:not(:hover):not(:active):not(.has-text-color) {
-	color: var(--global--color-background);
+	color: var(--global--color-white);
 }
 
 .has-background .wp-block-search .wp-block-search__button.wp-block-search__button:not(:hover):not(:active):not(.has-text-color) {
@@ -1854,11 +1860,11 @@ pre.wp-block-preformatted {
 }
 
 .wp-block-search .wp-block-search__button.wp-block-search__button:not(:hover):not(:active):not(.has-background) {
-	background-color: var(--global--color-primary);
+	background-color: var(--global--color-secondary);
 }
 
 .has-background .wp-block-search .wp-block-search__button.wp-block-search__button:not(:hover):not(:active):not(.has-background) {
-	background-color: var(--local--color-primary, var(--global--color-primary));
+	background-color: var(--local--color-secondary, var(--global--color-secondarys));
 }
 
 .wp-block-search .wp-block-search__button.wp-block-search__button:hover,
@@ -1910,17 +1916,17 @@ pre.wp-block-preformatted {
 
 .wp-block-search.wp-block-search__button-inside.wp-block-search__text-button .wp-block-search__button:hover,
 .wp-block-search.wp-block-search__button-inside.wp-block-search__icon-button .wp-block-search__button:hover {
-	color: var(--global--color-dark-gray);
+	color: var(--global--color-primary-blue);
 }
 
 .is-dark-theme .wp-block-search.wp-block-search__button-inside.wp-block-search__text-button .wp-block-search__button,
 .is-dark-theme .wp-block-search.wp-block-search__button-inside.wp-block-search__icon-button .wp-block-search__button {
-	color: var(--global--color-dark-gray);
+	color: var(--global--color-primary-blue);
 }
 
 .is-dark-theme .wp-block-search.wp-block-search__button-inside.wp-block-search__text-button .wp-block-search__button:hover,
 .is-dark-theme .wp-block-search.wp-block-search__button-inside.wp-block-search__icon-button .wp-block-search__button:hover {
-	background-color: var(--global--color-dark-gray);
+	background-color: var(--global--color-primary-blue);
 	color: var(--global--color-white);
 }
 
@@ -2350,11 +2356,11 @@ a {
 }
 
 .has-dark-gray-color[class] {
-	color: var(--global--color-dark-gray);
+	color: var(--global--color-primary-blue);
 }
 
 .has-dark-gray-color[class] > [class*=__inner-container] {
-	--local--color-primary: var(--global--color-dark-gray, #000);
+	--local--color-primary: var(--global--color-primary-blue, #000);
 	color: var(--local--color-primary);
 }
 
@@ -2442,11 +2448,11 @@ a {
 }
 
 .has-dark-gray-background-color[class] {
-	background-color: var(--global--color-dark-gray);
+	background-color: var(--global--color-primary-blue);
 }
 
 .has-dark-gray-background-color[class] > [class*=__inner-container] {
-	--local--color-background: var(--global--color-dark-gray, #000);
+	--local--color-background: var(--global--color-primary-blue, #000);
 	background-color: var(--local--color-background);
 }
 
@@ -2557,7 +2563,7 @@ a {
 .has-background:not(.has-text-color).has-orange-background-color[class],
 .has-background:not(.has-text-color).has-yellow-background-color[class],
 .has-background:not(.has-text-color).has-white-background-color[class] {
-	color: var(--global--color-dark-gray);
+	color: var(--global--color-primary-blue);
 }
 
 .has-background:not(.has-text-color).has-green-background-color[class] > [class*=__inner-container],
