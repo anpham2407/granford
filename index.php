@@ -15,66 +15,41 @@
  */
 
 get_header(); ?>
-<?php if ( is_home() && ! is_front_page() && ! empty( single_post_title( '', false ) ) ) : ?>
-	<header class="page-header alignwide">
-		<h1 class="page-title"><?php single_post_title(); ?></h1>
-	</header><!-- .page-header -->
-<?php endif; ?>
 
-<div class="hero-banner">
-	<picture>
-		<source media="(min-width:768px)" srcset="http://13.212.87.234/wp-content/uploads/2022/02/hero-contact.jpg">
-		<img 
-			src="http://13.212.87.234/wp-content/uploads/2022/02/hero-contact-mobile.jpg"
-			class="attachment-full size-full hero-banner-img"
-			alt=""
-			style="width:100%"
-			data-aos="fade-down" data-aos-anchor=".site"
-		>
-	</picture>
-	
-	<div class="hero-content">
-		<div class="container-lg">
-			<h4 class="head" data-aos="fade-left" data-aos-delay="200" data-aos-anchor=".site">Let’s Connect.</h4>
+<div class="wide-max-width news">
+	<div class="fullwidth title-section mb-5">
+		<div class="container-lg p-lg-0">
+			<div class="row">
+				<div class="col-12">
+					<div class="tag font-30 fw-bold text-uppercase color-secondary p-0" data-aos="fade-left">NEWS</div>
+					<div class="title font-3 font-size-xl p-0" data-aos="fade-left" data-aos-delay="200">Here’s The Latest At Granford.</div>
+				</div>
+			</div>
 		</div>
 	</div>
-</div>
-
-<div class="fullwidth hero-text mb-0 hero-text-contact-fix-space">
-	<div class="container-lg d-md-flex">
-		<div class="left-text bg-white font-3 font-head primary-color">
-			Let’s Connect.
-		</div>
-		<div class="right-text bg-white font-regular">
+	<div class="fullwidth news-list pb-lg-5">
+		<div class="container-lg p-lg-0">
+			<?php echo do_shortcode( '[recent_posts num="20" cat="" order=""]' ); ?>
 		</div>
 	</div>
-</div>
 
-<div class="fullwidth contact-body mb-5">
-	<div class="container-lg">
-		<div class="row">
-			<div class="left-side col-12 col-md-6 mt-3 mt-md-0" data-aos="fade-up">
-				<div class="card border-0 h-100 justify-content-between">
-					<div class="introduce font-regular">
-						The Granford team—backed by our deep network of resources—is ready to help problem-solve your supply chain challenges. 
+	<div class="fullwidth contact-body mt-4 mb-3 mt-lg-5 mb-lg-5">
+		<div class="container-lg p-lg-0">
+			<div class="row">
+				<div class="left-side col-12 col-md-6 mt-3 mt-md-0">
+					<div class="card border-0">
+						<div class="introduce font-3 font-head primary-color">
+							To learn more about Granford, please fill out this form.
+						</div>
 					</div>
-					<div class="address font-30 mb-5 text-dark" style="max-width: 280px">
-						<div class="fw-bold text-uppercase">US Headquarters</div>
-						<div class="fw-regular">900 Riverdale Street, #187 West Springfield, MA 01089</div><br>
-
-						<div class="fw-bold text-uppercase">US Distribution Center</div>
-						<div class="fw-regular">1545 E. Locust Street Ontario, CA 91761</div><br><br>
+				</div>
+				<div class="right-side col-12 col-md-6 mt-4 mt-md-0">
+					<div class="card border-0 px-md-5">
+						<?php echo do_shortcode( '[contact-form-7 id="147"]' ); ?>
 					</div>
 				</div>
 			</div>
-			<div class="right-side col-12 col-md-6 mt-4 mt-md-0" data-aos="fade-up" data-aos-delay="200">
-				<div class="card border-0 px-md-5">
-					<?php echo do_shortcode( '[contact-form-7 id="147"]' ); ?>
-
-				</div>
-			</div>
-  		</div>
-	</div>
+		</div>
 	</div>
 </div>
 <?php

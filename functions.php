@@ -692,7 +692,7 @@ add_action( 'wp_footer', 'twentytwentyone_add_ie_class' );
 // short code recent post
 // recent posts shortcode
 // @ https://digwp.com/2018/08/shortcode-display-recent-posts/
-function shapeSpace_recent_posts_shortcode($atts, $content = null) {
+function recent_posts_slider_shortcode($atts, $content = null) {
 	global $post;
 	extract(shortcode_atts(array(
 		'cat'     => '',
@@ -725,4 +725,39 @@ function shapeSpace_recent_posts_shortcode($atts, $content = null) {
 	wp_reset_postdata();
 	return '<ul class="post-slider">'. $output .'</ul>';
 }
-add_shortcode('recent_posts', 'shapeSpace_recent_posts_shortcode');
+
+function recent_posts_shortcode($atts, $content = null) {
+	global $post;
+	extract(shortcode_atts(array(
+		'cat'     => '',
+		'num'     => '5',
+		'order'   => 'DESC',
+		'orderby' => 'post_date',
+	), $atts));
+	$args = array(
+		'cat'            => $cat,
+		'posts_per_page' => $num,
+		'order'          => $order,
+		'orderby'        => $orderby,
+	);
+	$output = '';
+	$posts = get_posts($args);
+	foreach($posts as $post) {
+		setup_postdata($post);
+		$thumbnail = '';
+		if(wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), "medium" )) {
+			$thumbnail = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), "medium" );
+			$thumbnail = '<div class="thumbnail"><img src="'.$thumbnail[0].'"/></div>';
+		}
+		$output .= '<div class="col-12 col-md-4 col-lg-3"><div class="card border-0">
+				'.$thumbnail.'
+				<div class="content text-left"><div class="date">'.get_the_date( 'M. j, Y' ).'</div>
+				<a class="title" href="'. get_the_permalink() .'">'. get_the_title() .'</a>
+				<a class="readmore" href="'. get_the_permalink() .'">Read more</a></div>
+			</div></div>';
+	}
+	wp_reset_postdata();
+	return '<div class="post-items row g-3">'. $output .'</div>';
+}
+add_shortcode('recent_posts', 'recent_posts_shortcode');
+add_shortcode('recent_posts_slider', 'recent_posts_slider_shortcode');

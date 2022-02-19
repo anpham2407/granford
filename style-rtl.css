@@ -7692,6 +7692,22 @@ body[data-aos-easing=ease-in-out-quart] [data-aos] {
 	font-family: var(--global--font-3rd);
 }
 
+.font-size-xl {
+	font-size: 30px;
+}
+@media only screen and (min-width: 592px) {
+
+	.font-size-xl {
+		font-size: 45px;
+	}
+}
+@media only screen and (min-width: 822px) {
+
+	.font-size-xl {
+		font-size: 60px;
+	}
+}
+
 .font-head {
 	font-size: 24px;
 	line-height: 1.3;
@@ -8788,7 +8804,7 @@ a:hover {
 @media only screen and (min-width: 592px) {
 
 	.post-slider .item {
-		box-shadow: -1px 0 8px 0 rgba(0, 0, 0, 0.25);
+		box-shadow: -1px 0 8px 0 rgba(0, 0, 0, 0.14);
 	}
 }
 
@@ -8876,6 +8892,59 @@ a:hover {
 
 .post-slider.slick-dotted.slick-slider {
 	padding: 0;
+}
+
+.post-items .card {
+	box-shadow: -1px 0 8px 0 rgba(0, 0, 0, 0.14);
+}
+
+.post-items .card .thumbnail img {
+	width: 100%;
+}
+
+.post-items .card .content {
+	padding: 20px 10px;
+}
+
+.post-items .card .date {
+	text-transform: uppercase;
+	font-size: 12px;
+	display: block;
+	text-decoration: none;
+	font-weight: 700;
+	color: #53565a;
+	margin-bottom: 5px;
+}
+
+.post-items .card .title {
+	font-size: 24px;
+	display: block;
+	line-height: 1.1;
+	text-decoration: none;
+	color: #53565a;
+	font-family: var(--global--font-3rd);
+	overflow: hidden;
+	text-overflow: ellipsis;
+	display: -webkit-box;
+	-webkit-line-clamp: 2;
+	-webkit-box-orient: vertical;
+	min-height: 53px;
+}
+
+.post-items .card .readmore {
+	font-size: 12px;
+	text-transform: uppercase;
+	color: #ff6900;
+	display: inline-block;
+	text-decoration: none;
+	margin-top: 10px;
+	font-weight: 700;
+}
+@media only screen and (min-width: 592px) {
+
+	.post-items .card .readmore {
+		display: block;
+	}
 }
 
 #features {
@@ -9009,4 +9078,14 @@ a:hover {
 	border: none !important;
 	color: var(--global--color-white);
 	margin: 2em 2px 1em !important;
+}
+
+.wpcf7 .wpcf7-submit {
+	width: 100%;
+}
+@media screen and (min-width: 768px) {
+
+	.wpcf7 .wpcf7-submit {
+		max-width: 210px;
+	}
 }

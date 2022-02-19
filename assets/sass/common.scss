@@ -142,6 +142,18 @@
   font-family: var(--global--font-3rd);
 }
 
+.font-size-xl {
+  font-size: 30px;
+
+  @include media(tablet) {
+    font-size: 45px;
+  }
+
+  @include media(desktop) {
+    font-size: 60px;
+  }
+}
+
 .font-head {
   font-size: 24px;
   line-height: 1.3;
