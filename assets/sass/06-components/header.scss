@@ -9,7 +9,7 @@
 	z-index: 10;
 
 	.wp-custom-logo & {
-		align-items: center;
+		align-items: flex-end;
 		padding: 20px 0;
 		@include media(tablet) {
 			padding: 15px 0 20px;
@@ -142,7 +142,7 @@
 						position: absolute;
 						padding-top: calc(0.5 * var(--global--spacing-vertical));
 						margin-top: 0;
-						top: 17px;
+						top: 20px;
 
 
 						.primary-navigation-open & {

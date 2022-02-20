@@ -18,4 +18,8 @@ $wrapper_classes .= has_nav_menu( 'primary' ) ? ' has-menu' : '';
 	<?php get_template_part( 'template-parts/header/site-branding' ); ?>
 	<?php get_template_part( 'template-parts/header/site-nav' ); ?>
 
+	<?php if ( is_active_sidebar( 'header-top-right' ) ) : ?>
+		<?php dynamic_sidebar( 'header-top-right' ); ?>
+	<?php endif; ?>
+
 </header><!-- #masthead -->

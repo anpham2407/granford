@@ -14,7 +14,7 @@ if ( version_compare( $GLOBALS['wp_version'], '5.3', '<' ) ) {
 	require get_template_directory() . '/inc/back-compat.php';
 }
 
-if ( ! function_exists( 'twenty_twenty_one_setup' ) ) {
+if ( ! function_exists( 'granford_setup' ) ) {
 	/**
 	 * Sets up theme defaults and registers support for various WordPress features.
 	 *
@@ -26,7 +26,7 @@ if ( ! function_exists( 'twenty_twenty_one_setup' ) ) {
 	 *
 	 * @return void
 	 */
-	function twenty_twenty_one_setup() {
+	function granford_setup() {
 		/*
 		 * Make theme available for translation.
 		 * Translations can be filed in the /languages/ directory.
@@ -340,7 +340,7 @@ if ( ! function_exists( 'twenty_twenty_one_setup' ) ) {
 		add_theme_support( 'custom-units' );
 	}
 }
-add_action( 'after_setup_theme', 'twenty_twenty_one_setup' );
+add_action( 'after_setup_theme', 'granford_setup' );
 
 /**
  * Register widget area.
@@ -351,7 +351,7 @@ add_action( 'after_setup_theme', 'twenty_twenty_one_setup' );
  *
  * @return void
  */
-function twenty_twenty_one_widgets_init() {
+function granford_widgets_init() {
 
 	register_sidebar(
 		array(
@@ -376,8 +376,20 @@ function twenty_twenty_one_widgets_init() {
 			'after_title'   => '</h2>',
 		)
 	);
+
+	register_sidebar(
+		array(
+			'name'          => esc_html__( 'Header Top Right', 'twentytwentyone' ),
+			'id'            => 'header-top-right',
+			'description'   => esc_html__( 'Add widgets here to appear in right side top header.', 'twentytwentyone' ),
+			'before_widget' => '<section id="%1$s" class="widget %2$s nav-right-side">',
+			'after_widget'  => '</section>',
+			'before_title'  => '<h2 class="widget-title">',
+			'after_title'   => '</h2>',
+		)
+	);
 }
-add_action( 'widgets_init', 'twenty_twenty_one_widgets_init' );
+add_action( 'widgets_init', 'granford_widgets_init' );
 
 /**
  * Set the content width in pixels, based on the theme's design and stylesheet.

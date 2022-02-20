@@ -338,7 +338,7 @@
 	}
 }
 
-.site-header .request-btn {
+.site-header .nav-right-side {
 	flex-grow: 1;
 	text-align: right;
 	margin-right: 20px;
@@ -348,11 +348,11 @@
 	}
 
 	@include media(desktop) {
-		margin-right: 100px;
+		margin-right: 0;
 	}
 }
 
-.site-header .request-btn a {
+.site-header .nav-right-side a {
 	padding: 10px 20px;
 	background-color: #ff6900;
 	color: #fff;
