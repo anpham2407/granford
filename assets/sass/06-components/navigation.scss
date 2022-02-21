@@ -185,9 +185,11 @@
 			opacity: 1;
 			transform: translateY(0);
 			overflow: visible;
+			padding-top: 110px;
 		}
 		.menu-button-container{
 			right: 12px;
+			background-color: transparent;
 		}
 	}
 
@@ -252,6 +254,7 @@
 			background: transparent;
 			color: currentColor;
 			border: none;
+			display: none;
 
 			&:focus {
 				outline: 2px solid var(--wp--style--color--link, var(--global--color-primary));
@@ -303,6 +306,8 @@
 				padding-top: 3px;
 				transition: all 0.5s ease;
 				z-index: 88888;
+				min-width: 200px;
+				padding: 10px 0;
 
 				&:before,
 				&:after {
@@ -316,6 +321,7 @@
 					border-color: var(--global--color-white) transparent;
 					border-width: 0 7px 10px 7px;
 					background: var(--global--color-white);
+					display: none;
 				}
 
 				&:after {

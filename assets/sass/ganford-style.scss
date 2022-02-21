@@ -75,12 +75,15 @@
 }
 
 .header-banner .what-news {
-	padding: 20px 20px 10px;
+	padding: 15px 70px;
 	background-color: #F2F0F0;
 	color: #FF6900;
 	display: flex;
 	align-items: center;
 	justify-content: center;
+	width: 600px;
+	font-size: 19px;
+	font-weight: bold;
 
 	@include media(tablet) {
 		padding: 10px 70px;
@@ -136,6 +139,7 @@
 
 	@include media(desktop) {
 		flex: 0 0 600px;
+		padding-right: 70px;
 	}
 }
 
@@ -411,7 +415,7 @@
 }
 
 #tile-1 {
-	padding-top: 140px;
+	padding-top: 100px;
 
 	.tab-pane {
 		padding: 30px 0;
@@ -504,6 +508,8 @@
 			.primary-outline-btn {
 				margin-top: 30px;
 				display: inline-block;
+				text-align: center;
+				text-transform: uppercase;
 			}
 		}
 
@@ -523,6 +529,13 @@
 // .container{
 // 	padding: 0 70px;
 // }
+
+.btn-240{
+	width: 240px;
+}
+.btn-210{
+	width: 210px;
+}
 .block-z-style {
 	margin: auto;
 	position: relative;
@@ -675,7 +688,8 @@
 	.primary-outline-btn {
 		margin-top: 30px;
 		display: inline-block;
-		width: 110px;
+		text-transform: uppercase;
+		text-align: center;
 
 		@include media(mobile-only) {
 			width: 100%;
@@ -726,6 +740,10 @@
 	.primary-outline-btn {
 		margin-top: 30px;
 		display: inline-block;
+		text-align: center;
+		@include media(tablet) {
+			min-width: 240px;
+		}
 
 		@include media(mobile-only) {
 			width: 100%;
