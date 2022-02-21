@@ -4783,6 +4783,7 @@ h1.page-title {
 	.primary-navigation > .primary-menu-container {
 		position: static;
 		visibility: visible;
+		overflow: visible;
 		opacity: 1;
 		padding: 0;
 		height: auto;
@@ -4827,6 +4828,7 @@ h1.page-title {
 	visibility: visible;
 	opacity: 1;
 	transform: translateY(0);
+	overflow: visible;
 }
 
 .primary-navigation-open .primary-navigation .menu-button-container {
@@ -4868,10 +4870,16 @@ h1.page-title {
 	position: relative;
 	width: 100%;
 }
+@media only screen and (min-width: 822px) {
+
+	.primary-navigation > div > .menu-wrapper li {
+		display: flex;
+		margin: 0 5px;
+	}
+}
 @media only screen and (min-width: 482px) {
 
 	.primary-navigation > div > .menu-wrapper li {
-		margin: 0;
 		width: inherit;
 	}
 
@@ -4883,7 +4891,6 @@ h1.page-title {
 .primary-navigation > div > .menu-wrapper .sub-menu-toggle {
 	display: flex;
 	height: calc(2 * var(--primary-nav--padding) + 1.15em + 1px);
-	width: 44px;
 	padding: 0;
 	justify-content: center;
 	align-items: center;
@@ -4951,17 +4958,18 @@ h1.page-title {
 		top: -10px;
 		right: var(--global--spacing-horizontal);
 		border-style: solid;
-		border-color: var(--primary-nav--border-color) transparent;
+		border-color: var(--global--color-white) transparent;
 		border-width: 0 7px 10px 7px;
+		background: var(--global--color-white);
 	}
 
 	.primary-navigation > div > .menu-wrapper > li > .sub-menu:after {
 		top: -9px;
-		border-color: var(--global--color-background) transparent;
+		border-color: var(--global--color-white) transparent;
 	}
 
 	.primary-navigation > div > .menu-wrapper > li > .sub-menu li {
-		background: var(--global--color-background);
+		background: var(--global--color-white);
 	}
 
 	.primary-navigation > div > .menu-wrapper > li > .sub-menu.submenu-reposition-left {
@@ -5038,8 +5046,7 @@ h1.page-title {
 	fill: var(--primary-nav--color-text);
 }
 
-.primary-navigation a:hover,
-.primary-navigation a:visited {
+.primary-navigation a:hover {
 	color: var(--primary-nav--color-link-hover);
 }
 
@@ -5060,7 +5067,6 @@ h1.page-title {
 	padding: 0;
 	list-style: none;
 	margin-right: var(--primary-nav--padding);
-	border: 1px solid var(--primary-nav--border-color);
 }
 
 .primary-navigation .sub-menu .sub-menu {

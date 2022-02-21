@@ -138,6 +138,7 @@
 		@include media(desktop) {
 			position: static;
 			visibility: visible;
+			overflow: visible;
 			opacity: 1;
 			padding: 0;
 			height: auto;
@@ -183,6 +184,7 @@
 			visibility: visible;
 			opacity: 1;
 			transform: translateY(0);
+			overflow: visible;
 		}
 		.menu-button-container{
 			right: 12px;
@@ -226,9 +228,12 @@
 			display: block;
 			position: relative;
 			width: 100%;
+			@include media(desktop) {
+				display: flex;
+				margin: 0 5px;
+			}
 
 			@include media(mobile) {
-				margin: 0;
 				width: inherit;
 
 				&:last-child {
@@ -241,7 +246,6 @@
 		.sub-menu-toggle {
 			display: flex;
 			height: calc(2 * var(--primary-nav--padding) + 1.15em + 1px);
-			width: 44px;
 			padding: 0;
 			justify-content: center;
 			align-items: center;
@@ -309,17 +313,18 @@
 					top: -10px;
 					left: var(--global--spacing-horizontal);
 					border-style: solid;
-					border-color: var(--primary-nav--border-color) transparent;
+					border-color: var(--global--color-white) transparent;
 					border-width: 0 7px 10px 7px;
+					background: var(--global--color-white);
 				}
 
 				&:after {
 					top: -9px;
-					border-color: var(--global--color-background) transparent;
+					border-color: var(--global--color-white) transparent;
 				}
 
 				li {
-					background: var(--global--color-background);
+					background: var(--global--color-white);
 				}
 
 				&.submenu-reposition-left {
@@ -416,8 +421,7 @@
 			fill: var(--primary-nav--color-text);
 		}
 
-		&:hover,
-		&:visited {
+		&:hover{
 			color: var(--primary-nav--color-link-hover);
 		}
 
@@ -440,7 +444,6 @@
 		padding: 0;
 		list-style: none;
 		margin-left: var(--primary-nav--padding);
-		border: 1px solid var(--primary-nav--border-color);
 
 		.sub-menu {
 			border: none;
