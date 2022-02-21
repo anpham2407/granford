@@ -306,8 +306,9 @@
 				padding-top: 3px;
 				transition: all 0.5s ease;
 				z-index: 88888;
-				min-width: 200px;
-				padding: 10px 0;
+				min-width: 260px;
+				padding: 10px 10px;
+				background: white;
 
 				&:before,
 				&:after {
