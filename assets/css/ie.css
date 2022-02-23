@@ -4561,17 +4561,11 @@ table.wp-calendar-table caption {
 .site-logo .custom-logo {
   margin-left: auto;
   margin-right: auto;
-  max-width: 96px;
-  max-height: 96px;
+  max-width: 120px;
+  max-height: 120px;
   height: auto;
   display: inline-block;
-  width: auto;
-  width: 100px;
-}
-@media only screen and (min-width: 592px) {
-  .site-logo .custom-logo {
-    width: 120px;
-  }
+  width: 120px;
 }
 @media only screen and (min-width: 482px) {
   .site-logo .custom-logo {
@@ -4586,11 +4580,15 @@ table.wp-calendar-table caption {
   .site-header.has-logo:not(.has-title-and-tagline).has-menu .site-logo {
     position: absolute;
     padding-top: 5px;
-    margin-top: 0;
+    margin-top: 3px;
     top: 20px;
   }
   .primary-navigation-open .site-header.has-logo:not(.has-title-and-tagline).has-menu .site-logo {
-    display: none;
+    z-index: 11;
+    margin-left: 30px;
+  }
+  .primary-navigation-open .site-header.has-logo:not(.has-title-and-tagline).has-menu .site-logo img {
+    filter: brightness(0) invert(1);
   }
   .site-header.has-logo:not(.has-title-and-tagline).has-menu .site-logo img {
     max-height: calc(8px + 2em);
@@ -5434,7 +5432,7 @@ h1.page-title {
   border: none;
   color: #fff;
 }
-@media only screen and (max-width: 481px) {
+@media only screen and (max-width: 591px) {
   .menu-button-container #primary-mobile-menu {
     padding: 5px;
   }
@@ -5454,7 +5452,7 @@ h1.page-title {
   height: 40px;
   color: #fff;
 }
-@media only screen and (max-width: 481px) {
+@media only screen and (max-width: 591px) {
   .menu-button-container #primary-mobile-menu .dropdown-icon .svg-icon {
     width: 22px;
     height: 22px;
@@ -5494,7 +5492,7 @@ h1.page-title {
   margin-bottom: 0;
   position: absolute;
 }
-@media only screen and (max-width: 481px) {
+@media only screen and (max-width: 591px) {
   .primary-navigation {
     left: 15px;
     width: 28px;
@@ -5548,7 +5546,7 @@ h1.page-title {
     display: flex;
   }
 }
-@media only screen and (max-width: 481px) {
+@media only screen and (max-width: 591px) {
   .has-logo.has-title-and-tagline .primary-navigation > .primary-menu-container {
     position: fixed;
     transform: translateY(0) translateX(100%);
@@ -5588,7 +5586,7 @@ h1.page-title {
   right: 12px;
   background-color: transparent;
 }
-@media only screen and (max-width: 481px) {
+@media only screen and (max-width: 591px) {
   .primary-navigation-open .has-logo.has-title-and-tagline .primary-navigation > .primary-menu-container {
     transform: translateX(0) translateY(0);
   }
@@ -5605,7 +5603,7 @@ h1.page-title {
   padding-left: 0;
   position: relative;
 }
-@media only screen and (max-width: 481px) {
+@media only screen and (max-width: 591px) {
   .primary-navigation > div > .menu-wrapper {
     padding-bottom: 100px;
   }
@@ -5646,7 +5644,7 @@ h1.page-title {
 .primary-navigation > div > .menu-wrapper .sub-menu-toggle:focus {
   outline: 2px solid #1e22aa;
 }
-@media only screen and (max-width: 481px) {
+@media only screen and (max-width: 591px) {
   .primary-navigation > div > .menu-wrapper .sub-menu-toggle {
     display: none;
   }
@@ -5776,7 +5774,6 @@ h1.page-title {
 }
 .primary-navigation a {
   display: block;
-  font-family: Roboto Slab, -apple-system, BlinkMacSystemFont, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
   font-size: 1.25rem;
   font-weight: normal;
   padding: 7px 0;
@@ -5828,7 +5825,7 @@ h1.page-title {
     padding: 0;
   }
 }
-@media only screen and (max-width: 481px) {
+@media only screen and (max-width: 591px) {
   .primary-navigation .sub-menu .menu-item:last-child {
     margin-bottom: 0;
   }
@@ -5868,7 +5865,7 @@ h1.page-title {
   display: inline-block;
 }
 
-@media only screen and (max-width: 481px) {
+@media only screen and (max-width: 591px) {
   .lock-scrolling .site {
     position: fixed;
     max-width: 100%;
@@ -8359,12 +8356,21 @@ a:hover {
 }
 
 .primary-btn {
-  padding: 10px 20px;
+  padding: 14px 10px;
   background-color: #ff6900;
   color: #fff;
   text-decoration: none;
   font-size: 14px;
   text-transform: uppercase;
+  font-weight: 700;
+  text-align: center;
+  line-height: 1;
+  letter-spacing: 2px;
+}
+@media only screen and (max-width: 591px) {
+  .primary-btn {
+    font-size: 16px;
+  }
 }
 .primary-btn:hover, .primary-btn:focus {
   color: #fff;
@@ -8374,19 +8380,20 @@ a:hover {
 }
 
 .primary-outline-btn {
-  padding: 5px 10px;
+  padding: 12px 10px;
   border: 2px solid #ff6900;
   color: #ff6900;
   text-decoration: none;
-  font-size: 16px;
+  font-size: 14px;
+  text-transform: uppercase;
+  font-weight: 700;
+  text-align: center;
+  line-height: 1;
+  letter-spacing: 2px;
 }
-@media only screen and (max-width: 481px) {
+@media only screen and (max-width: 591px) {
   .primary-outline-btn {
-    padding: 8px;
     font-size: 16px;
-    text-transform: uppercase;
-    font-weight: 700;
-    text-align: center;
   }
 }
 
@@ -8419,11 +8426,13 @@ a:hover {
   content: url(./assets/images/ajax-loader.gif);
 }
 .header-banner .center-content {
-  max-width: 530px;
-  padding: 20px;
+  padding: 40px 20px;
+  width: 100%;
 }
 @media only screen and (min-width: 592px) {
   .header-banner .center-content {
+    padding: 20px;
+    max-width: 530px;
     left: 4%;
     top: 40%;
     position: absolute;
@@ -8442,6 +8451,7 @@ a:hover {
   font-size: 34px;
   font-family: Roboto Slab, -apple-system, BlinkMacSystemFont, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
   font-weight: 400;
+  color: #000000;
 }
 @media only screen and (min-width: 592px) {
   .header-banner .center-content .head {
@@ -8457,6 +8467,7 @@ a:hover {
 .header-banner .center-content .desc {
   margin-top: 20px;
   font-size: 20px;
+  color: #000000;
 }
 @media only screen and (min-width: 592px) {
   .header-banner .center-content .desc {
@@ -8473,15 +8484,16 @@ a:hover {
 }
 
 .header-banner .what-news {
-  padding: 15px 70px;
+  padding: 40px 20px 15px;
   background-color: #F2F0F0;
   color: #FF6900;
   display: flex;
   align-items: center;
-  justify-content: center;
-  width: 600px;
+  width: 100%;
   font-size: 19px;
   font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 2px;
 }
 @media only screen and (min-width: 592px) {
   .header-banner .what-news {
@@ -8490,13 +8502,20 @@ a:hover {
     bottom: 0;
     left: 0;
     background-color: #fff;
+    width: 600px;
+    justify-content: center;
   }
 }
-
 .header-banner .what-news .icon {
   margin: 0 5px;
   padding: 3px;
   font-size: 10px;
+  display: none;
+}
+@media only screen and (min-width: 592px) {
+  .header-banner .what-news .icon {
+    display: block;
+  }
 }
 
 .news-block,
@@ -8718,8 +8737,8 @@ a:hover {
 }
 
 .image-bottom-content .bottom {
-  padding-top: 40px;
-  padding-bottom: 40px;
+  padding-top: 50px;
+  padding-bottom: 50px;
 }
 .image-bottom-content .bottom .primary-btn {
   margin-top: 40px;
@@ -8755,8 +8774,14 @@ a:hover {
   background-color: #ff6900;
   color: #fff;
   text-decoration: none;
-  font-size: 16px;
+  font-size: 10px;
   display: inline-block;
+  font-weight: 700;
+}
+@media only screen and (min-width: 592px) {
+  .site-header .nav-right-side a {
+    font-size: 14px;
+  }
 }
 
 .content-slider .slick-dots.top {
@@ -8881,6 +8906,7 @@ a:hover {
 }
 .tabs-content .ct .l-ct .des {
   font-size: 20px;
+  color: #000;
 }
 .tabs-content .ct .l-ct .primary-outline-btn {
   margin-top: 30px;
@@ -9056,14 +9082,9 @@ a:hover {
   text-transform: uppercase;
   text-align: center;
 }
-@media only screen and (max-width: 481px) {
+@media only screen and (max-width: 591px) {
   .block-z-style .primary-outline-btn {
     width: 100%;
-    text-align: center;
-    padding: 8px;
-    font-size: 16px;
-    text-transform: uppercase;
-    font-weight: 700;
   }
 }
 
@@ -9088,6 +9109,9 @@ a:hover {
 .block-two-coloumn .left,
 .block-two-coloumn .right {
   flex: 0 0 50%;
+}
+.block-two-coloumn .desc {
+  font-size: 20px;
 }
 .block-two-coloumn .head {
   font-size: 28px;
@@ -9122,7 +9146,7 @@ a:hover {
 
 .block-z {
   overflow: hidden;
-  padding-bottom: 40px;
+  padding-bottom: 50px;
 }
 @media only screen and (max-width: 481px) {
   .block-z .container {
@@ -9187,6 +9211,7 @@ a:hover {
   font-weight: 700;
   color: #53565A;
   margin-bottom: 5px;
+  letter-spacing: 2px;
 }
 .post-slider .item .title {
   font-size: 24px;
@@ -9210,6 +9235,7 @@ a:hover {
   text-decoration: none;
   margin-top: 10px;
   font-weight: 700;
+  letter-spacing: 2px;
 }
 @media only screen and (min-width: 592px) {
   .post-slider .item .readmore {
@@ -9258,6 +9284,7 @@ a:hover {
   font-weight: 700;
   color: #53565A;
   margin-bottom: 5px;
+  letter-spacing: 2px;
 }
 .post-items .card .title {
   font-size: 24px;
@@ -9281,6 +9308,7 @@ a:hover {
   text-decoration: none;
   margin-top: 10px;
   font-weight: 700;
+  letter-spacing: 2px;
 }
 @media only screen and (min-width: 592px) {
   .post-items .card .readmore {
@@ -9290,6 +9318,7 @@ a:hover {
 
 #features {
   padding: 0 20px 40px;
+  overflow: hidden;
 }
 #features .accordion-item {
   background-color: #fff;
@@ -9307,6 +9336,7 @@ a:hover {
 #features .accordion-item .accordion-header .accordion-button .left-icon {
   color: #7A7E83;
   font-size: 30px;
+  width: 45px;
 }
 #features .accordion-item .accordion-header .accordion-button span {
   color: #7A7E83;
@@ -9339,21 +9369,13 @@ a:hover {
 }
 #features .accordion-item .accordion-body .des {
   font-size: 16px;
+  color: #000;
 }
 #features .accordion-item .accordion-body .primary-outline-btn {
   width: 100%;
   display: block;
   text-align: center;
-  padding: 8px;
-  font-size: 16px;
-  text-transform: uppercase;
-  font-weight: 700;
   margin-top: 20px;
-}
-@media only screen and (min-width: 592px) {
-  #features .accordion-item .accordion-body .primary-outline-btn {
-    padding: 8px 0;
-  }
 }
 
 @media only screen and (max-width: 591px) {
