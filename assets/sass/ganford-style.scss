@@ -304,7 +304,11 @@
 		color: #53565A;
 		margin-top: 10px;
 		font-size: 20px;
-
+		width: 100%;
+		&.fix-box{
+			max-width: 580px;
+			margin: auto;
+		}
 		&.box-small {
 			max-width: 800px;
 			margin: auto;
@@ -976,6 +980,7 @@
 					color: #7A7E83;
 					font-size: 30px;
 					width: 45px;
+					text-align: center;
 				}
 
 				span {

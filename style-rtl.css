@@ -8308,6 +8308,12 @@ a:hover {
 	color: #53565a;
 	margin-top: 10px;
 	font-size: 20px;
+	width: 100%;
+}
+
+.image-bottom-content .content.fix-box {
+	max-width: 580px;
+	margin: auto;
 }
 
 .image-bottom-content .content.box-small {
