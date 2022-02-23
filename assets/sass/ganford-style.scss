@@ -368,18 +368,21 @@
 	@include media(desktop) {
 		margin-right: 0;
 	}
-}
 
-.site-header .nav-right-side a {
-	padding: 10px 20px;
-	background-color: #ff6900;
-	color: #fff;
-	text-decoration: none;
-	font-size: 10px;
-	display: inline-block;
-	font-weight: 700;
-	@include media(tablet) {
-		font-size: 14px;
+	a {
+		padding: 10px 20px;
+		background-color: #ff6900;
+		color: #fff;
+		text-decoration: none;
+		font-size: 10px;
+		display: inline-block;
+		font-weight: 700;
+		@include media(tablet) {
+			font-size: 14px;
+			width: 210px;
+			text-align: center;
+			letter-spacing: 2px;
+		}
 	}
 }
 

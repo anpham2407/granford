@@ -110,7 +110,6 @@
 		max-height: var(--branding--logo--max-height-mobile);
 		height: auto;
 		display: inline-block;
-		width: 120px;
 	}
 
 	@include media(mobile) {
@@ -124,7 +123,7 @@
 	}
 }
 
-@include media(mobile-only) {
+@include media(tablet-only) {
 
 	.site-header {
 
@@ -138,7 +137,7 @@
 						position: absolute;
 						padding-top: calc(0.5 * var(--global--spacing-vertical));
 						margin-top: 3px;
-						top: 20px;
+						top: 10px;
 
 
 						.primary-navigation-open & {
