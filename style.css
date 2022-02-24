@@ -7364,11 +7364,21 @@ a:hover {
 }
 
 .btn-240 {
-  width: 240px;
+  width: 100%;
+}
+@media only screen and (min-width: 592px) {
+  .btn-240 {
+    width: 240px;
+  }
 }
 
 .btn-210 {
-  width: 210px;
+  width: 100%;
+}
+@media only screen and (min-width: 592px) {
+  .btn-210 {
+    width: 210px;
+  }
 }
 
 .block-z-style {

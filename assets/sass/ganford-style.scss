@@ -553,10 +553,16 @@
 // }
 
 .btn-240{
-	width: 240px;
+	width: 100%;
+	@include media(tablet) {
+		width: 240px;
+	}
 }
 .btn-210{
-	width: 210px;
+	width: 100%;
+	@include media(tablet) {
+		width: 210px;
+	}
 }
 .block-z-style {
 	margin: auto;
