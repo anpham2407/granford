@@ -194,6 +194,7 @@
 			font-family: var(--global--font-3rd);
 			font-weight: 400;
 			max-width: 530px;
+			color: #000;
 
 			@include media(tablet) {
 				font-size: 40px;
@@ -209,6 +210,7 @@
 			margin-top: 20px;
 			font-size: 20px;
 			max-width: 530px;
+			color: #000;
 
 			@include media(tablet) {
 				margin-top: 30px;

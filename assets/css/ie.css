@@ -4588,9 +4588,14 @@ table.wp-calendar-table caption {
   }
   .primary-navigation-open .site-header.has-logo:not(.has-title-and-tagline).has-menu .site-logo img {
     filter: brightness(0) invert(1);
+    max-width: 180px;
+    max-height: initial;
   }
   .site-header.has-logo:not(.has-title-and-tagline).has-menu .site-logo img {
     max-height: calc(8px + 2em);
+  }
+  .primary-navigation-open .site-header.has-logo:not(.has-title-and-tagline).has-menu .site-logo {
+    top: 40px;
   }
   .site-header.has-logo.has-title-and-tagline {
     align-items: flex-start;
@@ -5491,10 +5496,8 @@ h1.page-title {
   margin-bottom: 0;
   position: absolute;
   flex-grow: 1;
-  text-align: center;
   display: flex;
   justify-content: center;
-  font-family: Roboto Slab, -apple-system, BlinkMacSystemFont, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
 }
 @media only screen and (max-width: 591px) {
   .primary-navigation {
@@ -5783,6 +5786,7 @@ h1.page-title {
   padding: 7px 0;
   text-decoration: none;
   color: #fff;
+  font-family: Roboto Slab, -apple-system, BlinkMacSystemFont, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
 }
 @media only screen and (min-width: 482px) {
   .primary-navigation a {
@@ -8610,6 +8614,7 @@ a:hover {
   font-family: Roboto Slab, -apple-system, BlinkMacSystemFont, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
   font-weight: 400;
   max-width: 530px;
+  color: #000;
 }
 @media only screen and (min-width: 592px) {
   .hero-banner .hero-content .head {
@@ -8626,6 +8631,7 @@ a:hover {
   margin-top: 20px;
   font-size: 20px;
   max-width: 530px;
+  color: #000;
 }
 @media only screen and (min-width: 592px) {
   .hero-banner .hero-content .desc {

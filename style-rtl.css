@@ -3313,9 +3313,14 @@ table.wp-calendar-table caption {
   }
   .primary-navigation-open .site-header.has-logo:not(.has-title-and-tagline).has-menu .site-logo img {
     filter: brightness(0) invert(1);
+    max-width: 180px;
+    max-height: initial;
   }
   .site-header.has-logo:not(.has-title-and-tagline).has-menu .site-logo img {
     max-height: calc(var(--button--padding-vertical) - (0.25 * var(--global--spacing-unit)) + 1.7em);
+  }
+  .primary-navigation-open .site-header.has-logo:not(.has-title-and-tagline).has-menu .site-logo {
+    top: 40px;
   }
   .site-header.has-logo.has-title-and-tagline {
     align-items: flex-start;
@@ -4071,10 +4076,8 @@ h1.page-title {
   margin-bottom: 0;
   position: absolute;
   flex-grow: 1;
-  text-align: center;
   display: flex;
   justify-content: center;
-  font-family: var(--global--font-3rd);
 }
 @media only screen and (max-width: 591px) {
   .primary-navigation {
@@ -4321,6 +4324,7 @@ h1.page-title {
   padding: var(--primary-nav--padding) 0;
   text-decoration: none;
   color: var(--global--color-white);
+  font-family: var(--global--font-3rd);
 }
 @media only screen and (min-width: 482px) {
   .primary-navigation a {
@@ -7029,6 +7033,7 @@ a:hover {
   font-family: var(--global--font-3rd);
   font-weight: 400;
   max-width: 530px;
+  color: #000;
 }
 @media only screen and (min-width: 592px) {
   .hero-banner .hero-content .head {
@@ -7045,6 +7050,7 @@ a:hover {
   margin-top: 20px;
   font-size: 20px;
   max-width: 530px;
+  color: #000;
 }
 @media only screen and (min-width: 592px) {
   .hero-banner .hero-content .desc {
