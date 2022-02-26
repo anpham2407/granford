@@ -357,12 +357,13 @@
 }
 
 .site-header .nav-right-side {
-	flex-grow: 1;
 	text-align: right;
 	margin-right: 20px;
+	flex-grow: 1;
 
 	@include media(tablet) {
 		margin-right: 60px;
+		flex-grow: 0;
 	}
 
 	@include media(desktop) {

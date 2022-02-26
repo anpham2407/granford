@@ -97,6 +97,11 @@
 	margin-top: 0;
 	margin-bottom: 0;
 	position: absolute;
+	flex-grow: 1;
+	text-align: center;
+    display: flex;
+    justify-content: center;
+	font-family: var(--global--font-3rd);
 	@include media(tablet-only) {
 		left: 15px;
 		width: 28px;
