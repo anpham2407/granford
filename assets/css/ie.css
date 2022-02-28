@@ -6808,13 +6808,11 @@ h1.page-title {
 	padding: 7px 0;
 	text-decoration: none;
 	color: #fff;
-	font-family: Roboto Slab, -apple-system, BlinkMacSystemFont, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
 }
 @media only screen and (min-width: 482px) {
 
 	.primary-navigation a {
 		display: block;
-		font-family: Roboto Slab, -apple-system, BlinkMacSystemFont, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
 		font-size: 1.25rem;
 		font-weight: normal;
 	}

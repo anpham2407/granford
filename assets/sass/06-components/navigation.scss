@@ -414,11 +414,9 @@
 		padding: var(--primary-nav--padding) 0;
 		text-decoration: none;
 		color: var(--global--color-white);
-		font-family: var(--global--font-3rd);
 
 		@include media(mobile) {
 			display: block;
-			font-family: var(--global--font-3rd);
 			font-size: var(--primary-nav--font-size);
 			font-weight: var(--primary-nav--font-weight);
 		}

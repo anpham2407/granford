@@ -5069,13 +5069,11 @@ h1.page-title {
 	padding: var(--primary-nav--padding) 0;
 	text-decoration: none;
 	color: var(--global--color-white);
-	font-family: var(--global--font-3rd);
 }
 @media only screen and (min-width: 482px) {
 
 	.primary-navigation a {
 		display: block;
-		font-family: var(--global--font-3rd);
 		font-size: var(--primary-nav--font-size);
 		font-weight: var(--primary-nav--font-weight);
 	}
