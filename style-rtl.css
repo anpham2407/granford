@@ -9204,3 +9204,37 @@ a:hover {
 	width: 100% !important;
 	max-width: 100% !important;
 }
+
+.page-template-contentSingleTemplate .entry-date {
+	text-transform: uppercase;
+	font-size: 12px;
+	display: block;
+	text-decoration: none;
+	font-weight: 700;
+	color: #53565a;
+	margin-bottom: 5px;
+	letter-spacing: 2px;
+}
+
+.page-template-contentSingleTemplate .entry-header {
+	border-bottom: none;
+	margin-bottom: 0;
+	padding-bottom: 0;
+	margin-top: 20px;
+}
+
+.page-template-contentSingleTemplate .entry-header .entry-title {
+	font-size: 35px;
+}
+@media only screen and (min-width: 592px) {
+
+	.page-template-contentSingleTemplate .entry-header .entry-title {
+		font-size: 45px;
+	}
+}
+@media only screen and (min-width: 822px) {
+
+	.page-template-contentSingleTemplate .entry-header .entry-title {
+		font-size: 60px;
+	}
+}
