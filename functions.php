@@ -727,10 +727,11 @@ function recent_posts_slider_shortcode($atts, $content = null) {
 			$thumbnail = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), "medium" );
 			$thumbnail = '<div class="thumbnail"><img src="'.$thumbnail[0].'"/></div>';
 		}
-		$output .= '<li class="item">
+		$output .= '<li class="item" data-des="'.get_the_excerpt().'">
 				'.$thumbnail.'
 				<div class="content"><div class="date">'.get_the_date( 'M. j, Y' ).'</div>
 				<a class="title" href="'. get_the_permalink() .'">'. get_the_title() .'</a>
+				<div class="des d-none">'.get_the_excerpt().'</div>
 				<a class="readmore" href="'. get_the_permalink() .'">Read more</a></div>
 			</li>';
 	}

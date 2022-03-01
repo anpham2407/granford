@@ -49,7 +49,7 @@ get_header(); ?>
 	</div>
 	<div class="right-news-slider">
 		<div>
-			<?php echo do_shortcode( '[recent_posts num="10" cat="" order="asc"]' ); ?>
+			<?php echo do_shortcode( '[recent_posts_slider num="10" cat="" order="asc"]' ); ?>
 		</div>
 	</div>
 </div>

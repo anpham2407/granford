@@ -67,6 +67,13 @@ jQuery(document).ready(function($) {
 	});
 
 	//post slider
+
+	$('.post-slider').on('init', function(event, slick){
+		// get first description item
+		var dataDes = $(slick.$slides[0]).data('des');
+		$('.news-block .left-text').empty().text(dataDes);
+	});
+
 	$('.post-slider').slick({
 		lazyLoad: 'ondemand',
 		slidesToShow: 3,
@@ -87,6 +94,11 @@ jQuery(document).ready(function($) {
 			// settings: "unslick"
 			// instead of a settings object
 		  ]
+	});
+
+	$('.post-slider').on('afterChange', function(event, slick, currentSlide) {
+		var dataDes = $(slick.$slides[currentSlide]).data('des');
+		$('.news-block .left-text').empty().text(dataDes);
 	});
 
 	// handle submit contact form 7
