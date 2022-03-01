@@ -725,9 +725,9 @@ function recent_posts_slider_shortcode($atts, $content = null) {
 		$thumbnail = '';
 		if(wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), "medium" )) {
 			$thumbnail = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), "medium" );
-			$thumbnail = '<div class="thumbnail"><img src="'.$thumbnail[0].'"/></div>';
+			$thumbnail = '<div class="thumbnail"><a class="title" href="'. get_the_permalink() .'"><img src="'.$thumbnail[0].'"/></a></div>';
 		}
-		$output .= '<li class="item" data-des="'.get_the_excerpt().'">
+		$output .= '<li class="item" data-des="'.wp_strip_all_tags(get_the_excerpt(), true).'">
 				'.$thumbnail.'
 				<div class="content"><div class="date">'.get_the_date( 'M. j, Y' ).'</div>
 				<a class="title" href="'. get_the_permalink() .'">'. get_the_title() .'</a>
@@ -760,7 +760,7 @@ function recent_posts_shortcode($atts, $content = null) {
 		$thumbnail = '';
 		if(wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), "medium" )) {
 			$thumbnail = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), "medium" );
-			$thumbnail = '<div class="thumbnail"><img src="'.$thumbnail[0].'"/></div>';
+			$thumbnail = '<div class="thumbnail"><a class="title" href="'. get_the_permalink() .'"><img src="'.$thumbnail[0].'"/></a></div>';
 		}
 		$output .= '<div class="col-12 col-md-4 col-lg-3"><div class="card border-0">
 				'.$thumbnail.'
