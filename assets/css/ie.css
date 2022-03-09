@@ -9898,7 +9898,7 @@ a:hover {
 
 	.header-banner .center-content {
 		padding: 20px;
-		max-width: 530px;
+		max-width: 580px;
 		left: 4%;
 		top: 40%;
 		position: absolute;
@@ -11120,7 +11120,7 @@ a:hover {
 	font-size: 35px;
 	margin-top: 10px !important;
 	margin-bottom: 20px !important;
-	color: #1e22aa;
+	color: #1e22aa !important;
 }
 @media only screen and (min-width: 592px) {
 
