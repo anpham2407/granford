@@ -88,16 +88,18 @@
 	font-size: 19px;
 	font-weight: bold;
 	text-transform: uppercase;
-    letter-spacing: 2px;
+    letter-spacing: 3px;
 
 	@include media(tablet) {
-		padding: 10px 70px;
+		padding: 20px 70px;
 		position: absolute;
 		bottom: 0;
 		left: 0;
 		background-color: #fff;
 		width: 600px;
-		justify-content: center;
+	}
+	@include media(desktop) {
+		padding: 35px 100px;
 	}
 	.icon {
 		margin: 0 5px;
@@ -143,6 +145,7 @@
 }
 
 .news-block .left-text {
+	padding: 0 10px;
 	@include media(tablet) {
 		flex: 0 0 360px;
 	}
@@ -150,6 +153,7 @@
 	@include media(desktop) {
 		flex: 0 0 600px;
 		padding-right: 70px;
+		padding-left: 30px;
 	}
 }
 

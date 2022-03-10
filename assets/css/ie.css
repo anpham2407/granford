@@ -9656,7 +9656,7 @@ body[data-aos-easing=ease-in-out-quart] [data-aos] {
 @media only screen and (min-width: 592px) {
 
 	.font-24 {
-		font-size: 10px;
+		font-size: 18px;
 	}
 }
 @media only screen and (min-width: 822px) {
@@ -9966,18 +9966,23 @@ a:hover {
 	font-size: 19px;
 	font-weight: bold;
 	text-transform: uppercase;
-	letter-spacing: 2px;
+	letter-spacing: 3px;
 }
 @media only screen and (min-width: 592px) {
 
 	.header-banner .what-news {
-		padding: 10px 70px;
+		padding: 20px 70px;
 		position: absolute;
 		bottom: 0;
 		left: 0;
 		background-color: #fff;
 		width: 600px;
-		justify-content: center;
+	}
+}
+@media only screen and (min-width: 822px) {
+
+	.header-banner .what-news {
+		padding: 35px 100px;
 	}
 }
 
@@ -10036,6 +10041,9 @@ a:hover {
 	}
 }
 
+.news-block .left-text {
+	padding: 0 10px;
+}
 @media only screen and (min-width: 592px) {
 
 	.news-block .left-text {
@@ -10047,6 +10055,7 @@ a:hover {
 	.news-block .left-text {
 		flex: 0 0 600px;
 		padding-right: 70px;
+		padding-left: 30px;
 	}
 }
 
@@ -11120,7 +11129,7 @@ a:hover {
 	font-size: 35px;
 	margin-top: 10px !important;
 	margin-bottom: 20px !important;
-	color: #1e22aa;
+	color: #1e22aa !important;
 }
 @media only screen and (min-width: 592px) {
 
