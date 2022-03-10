@@ -7054,7 +7054,7 @@ a:hover {
   font-size: 34px;
   font-family: var(--global--font-3rd);
   font-weight: 400;
-  max-width: 530px;
+  max-width: 640px;
   color: #000;
 }
 @media only screen and (min-width: 592px) {
