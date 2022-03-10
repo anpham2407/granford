@@ -38,7 +38,7 @@ jQuery(document).ready(function($) {
 		dotsClass: 'slick-dots top',
 		dots: true,
 		customPaging: function(slider, i) {
-			return '<div><i class="' + $(slider.$slides[i]).attr('icon') + '"></i><span class="value">' + $(slider.$slides[i]).attr('title') + '</span></div>';
+			return '<div><i class="' + $(slider.$slides[i]).data('icon') + '"></i><span class="value">' + $(slider.$slides[i]).attr('title') + '</span></div>';
 		},
 		responsive: [
 			{
