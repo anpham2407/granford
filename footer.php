@@ -40,16 +40,15 @@
 				</div>
 
 			</div><!-- .site-info -->
-		</div>
-		<!-- <div class="powered-by">
 			<?php
-			printf(
-				/* translators: %s: WordPress. */
-				esc_html__( 'Proudly powered by %s.', 'twentytwentyone' ),
-				'<a href="' . esc_url( __( 'https://wordpress.org/', 'twentytwentyone' ) ) . '">WordPress</a>'
-			);
-			?>
-		</div> -->
+			if ( is_active_sidebar( 'copy-right' ) ) : ?>
+
+			<div class="copy-right">
+				<?php dynamic_sidebar( 'copy-right' ); ?>
+			</div><!-- .widget-area -->
+
+			<?php endif; ?>
+		</div>
 	</footer><!-- #colophon -->
 
 </div><!-- #page -->
